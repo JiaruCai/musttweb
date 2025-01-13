@@ -28,7 +28,6 @@
         </nav>
       </header>
   <section id="sign-up" class="sign-up">
-    <h2>Sign Up</h2>
     <form 
       method="POST" 
       action="https://script.google.com/macros/s/AKfycby8JRCnA_cWWGmfDe14b35GCKUQm_5O7MVtpOA3_vane3qPBxoNYOV4abalzUH5uFo8/exec"
@@ -54,3 +53,20 @@
         <div class="gender-selection">
         <button type="button" class="gender-btn" data-value="Female">Female</button>
         <button type="button" class="gender-btn" data-value="Male">Male</button>
+        <button type="button" class="gender-btn" data-value="Other">Other</button>
+        </div>
+        <input type="hidden" name="Gender" id="gender-input">
+
+
+      <label for="phone-number">What is your phone number?</label>
+      <input id="phone-number" name="Phone Number" type="tel" placeholder="+XX XXXX XXXX" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+
+  
+
+</body>
+</html>

@@ -509,45 +509,35 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 
 
 
-
-
-
 /* Sign-Up Section */
 .sign-up {
-  padding: 50px 20px;
+  padding: 30px 10px; /* Reduced padding for smaller space */
   text-align: center;
   background-color: #fff; /* White background */
 }
 
-.sign-up h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #000; /* Black heading */
-}
-
 .sign-up-form {
-  max-width: 600px; /* Adjust for desktop */
-  width: 90%; /* Responsive for smaller screens */
+  max-width: 400px; /* Reduced width for smaller layout */
+  width: 90%; /* Still responsive for smaller screens */
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px; /* Smaller padding inside the form */
   box-sizing: border-box;
 }
 
 .sign-up-form label {
   display: block;
-  font-size: 16px;
+  font-size: 14px; /* Slightly smaller font size */
   font-weight: bold;
-  margin: 15px 0 5px;
+  margin: 10px 0 5px;
   color: #333;
 }
 
 .sign-up-form input,
 .sign-up-form button {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  padding: 8px; /* Smaller padding for inputs */
+  margin-bottom: 15px; /* Reduced spacing between fields */
+  font-size: 13px; /* Smaller input text */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -565,14 +555,17 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 
 .sign-up-form .gender-options label {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .sign-up-form button {
   background-color: #00c3a0; /* Teal background */
   color: #fff; /* White text */
   border: none;
+  padding: 10px;
+  font-size: 14px; /* Slightly smaller button text */
   cursor: pointer;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
@@ -584,18 +577,18 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 .gender-selection {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Spacing between buttons */
-  margin: 20px 0;
+  gap: 10px; /* Reduced spacing between buttons */
+  margin: 15px 0; /* Reduced margin */
 }
 
 .gender-btn {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 8px 15px; /* Smaller button padding */
+  font-size: 14px; /* Smaller font size for gender buttons */
   font-weight: bold;
   color: #00c3a0; /* Teal color */
   background-color: #fff; /* White background */
   border: 2px solid #00c3a0; /* Teal border */
-  border-radius: 25px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -613,9 +606,6 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 .gender-btn:focus {
   outline: none; /* Remove default focus outline */
 }
-
-
-
 
 
 
@@ -738,19 +728,17 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 
   /* Sign up form adjustments for mobile */
   .sign-up-form {
-    width: 100%; /* Take full width on mobile */
-    padding: 15px;
+    max-width: 100%; /* Full width for mobile */
+    padding: 10px; /* Reduced padding on mobile */
   }
 
   .gender-selection {
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Add space between buttons */
+    flex-direction: column; /* Stack gender buttons vertically */
+    gap: 10px; /* Adjust spacing between buttons */
   }
 
   .gender-btn {
-    width: 100%; /* Buttons take full width */
-    max-width: 300px;
+    width: 100%; /* Full width for buttons */
   }
 }
 
