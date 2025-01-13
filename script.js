@@ -27,22 +27,3 @@ if (mobileSlides) {
     mobileSlides.style.transform = `translateX(-${mobileIndex * 100}%)`;
   }, 5000);
 }
-
-// Gender button 
-document.querySelectorAll(".gender-btn").forEach((btn) => {
-    btn.addEventListener("click", function () {
-      // Remove active class from all buttons
-      document.querySelectorAll(".gender-btn").forEach((b) => b.classList.remove("active"));
-  
-      // Add active class to the clicked button
-      this.classList.add("active");
-  
-      // Update the hidden input value
-      document.getElementById("gender-input").value = this.dataset.value;
-    });
-  });
-
-
-
-  
-  

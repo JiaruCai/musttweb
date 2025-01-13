@@ -527,9 +527,11 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 }
 
 .sign-up-form {
-  max-width: 600px;
+  max-width: 600px; /* Adjust for desktop */
+  width: 90%; /* Responsive for smaller screens */
   margin: 0 auto;
-  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .sign-up-form label {
@@ -732,6 +734,23 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
     padding: 10px 20px; /* Adjust button size */
     font-size: 14px; /* Adjust font size */
     text-align: center;
+  }
+
+  /* Sign up form adjustments for mobile */
+  .sign-up-form {
+    width: 100%; /* Take full width on mobile */
+    padding: 15px;
+  }
+
+  .gender-selection {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add space between buttons */
+  }
+
+  .gender-btn {
+    width: 100%; /* Buttons take full width */
+    max-width: 300px;
   }
 }
 
