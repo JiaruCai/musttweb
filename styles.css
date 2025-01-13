@@ -693,6 +693,46 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
     flex-direction: column;
     gap: 20px; /* Adjust gap for vertical layout */
   }
+
+
+  /* Header adjustments for mobile */
+  .header-container {
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Center-align elements */
+    gap: 10px; /* Add spacing between elements */
+  }
+
+  .header-container .logo img {
+    max-width: 120px; /* Resize logo for smaller screens */
+  }
+
+  .header-container .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center-align buttons */
+    gap: 10px; /* Add spacing between buttons */
+  }
+
+  .header-container ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center-align navigation links */
+    gap: 10px; /* Add spacing between links */
+  }
+
+  .header-container ul li {
+    margin: 0; /* Remove extra margin */
+  }
+
+  .sign-up-btn {
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+  }
+
+  .share-btn {
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+  }
 }
 
 
