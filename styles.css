@@ -181,10 +181,11 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
   max-width: 100%; /* Full width of the container */
 }
 
+
 .testimonials {
   display: flex;
   gap: 20px; /* Space between testimonials */
-  animation: slide 10s infinite; /* Infinite sliding effect */
+  animation: transform 0.5s ease-in-out; /* Infinite sliding effect */
 }
 
 .testimonials blockquote {
