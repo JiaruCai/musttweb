@@ -23,9 +23,9 @@ header {
   
   /* Logo */
   header .logo img {
-    width: 40px; /* Small and rounded */
-    height: 40px;
-    border-radius: 50%; /* Makes the logo round */
+    width: 320px; /* Small and rounded */
+    height: 120px;
+    
     object-fit: cover; /* Ensures no white background is visible */
   }
   
@@ -43,7 +43,7 @@ header {
   button {
     text-decoration: none;
     color: #fff; /* White text */
-    background-color: #00c3a0; /* Black background */
+    background-color: #000; /* Black background */
     padding: 5px 15px; /* Add padding for button-like appearance */
     border-radius: 50px; /* Rounded corners */
     font-weight: bold;
@@ -55,7 +55,7 @@ header {
   
   header ul li a:hover,
   button:hover {
-    background-color: #000; /* Teal background on hover */
+    background-color: #283231; /* Teal background on hover */
     color: #fff; /* White text */
   }
   
@@ -113,7 +113,7 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
   /* Teal Buttons */
   .sign-up-btn, 
   header ul li a {
-    background-color: #00c3a0; /* Teal background */
+    background-color: #000; /* Teal background */
     color: #fff; /* White text */
   }
   
@@ -377,8 +377,8 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px; /* Space between buttons */
-  margin-bottom: 20px;
 }
 
 .btn {
