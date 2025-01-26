@@ -1,29 +1,3 @@
-// Hero Image Slider
-let heroIndex = 0;
-const heroSlides = document.querySelector(".hero-slider .slides");
-const heroSlideItems = document.querySelectorAll(".hero-slider .slides > *");
-
-if (heroSlides && heroSlideItems.length > 0) {
-  // Clone the first slide and append it to the end for a seamless loop
-  const firstSlideClone = heroSlideItems[0].cloneNode(true);
-  heroSlides.appendChild(firstSlideClone);
-
-  setInterval(() => {
-    heroIndex++;
-    heroSlides.style.transition = "transform 0.5s ease-in-out";
-    heroSlides.style.transform = `translateX(-${heroIndex * 100}%)`;
-
-    // Reset to the first slide instantly when the transition reaches the clone
-    if (heroIndex === heroSlideItems.length) {
-      setTimeout(() => {
-        heroSlides.style.transition = "none";
-        heroSlides.style.transform = "translateX(0)";
-        heroIndex = 0;
-      }, 500); // Match this to the transition duration
-    }
-  }, 2000); // Adjust the interval duration as needed
-}
-
 //Testimonials slider
 let testimonialIndex = 0;
 const testimonials = document.querySelector(".testimonials");
