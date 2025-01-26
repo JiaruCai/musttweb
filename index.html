@@ -18,7 +18,7 @@
         </div>
         <div class="buttons">
             <a href="signup.html" class="sign-up-btn">Sign Up</a>
-        </div>
+          </div>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#blog">Blog</a></li>
@@ -31,24 +31,63 @@
     </nav>
   </header>
   
-  
-  
 
   <!-- Hero Section -->
+  <script> 
+    function changeImageTo1()
+    {
+      var img = document.getElementById("image");
+      img.src = "Pics/Plan Less. Live More/Image 1.png";
+      return false;
+    }
+    function changeImageTo2()
+    {
+      var img = document.getElementById("image");
+      img.src = "Pics/Plan Less. Live More/Image 2.png";
+      return false;
+    }
+    function changeImageTo3()
+    {
+      var img = document.getElementById("image");
+      img.src = "Pics/Plan Less. Live More/Image 3.png";
+      return false;
+    }
+    function changeImageTo4()
+    {
+      var img = document.getElementById("image");
+      img.src = "Pics/Plan Less. Live More/Image 4.png";
+      return false;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".circle-button");
+
+      buttons.forEach(button => {
+          button.addEventListener("click", () => {
+              // Remove "selected" class from all buttons
+              buttons.forEach(btn => btn.classList.remove("selected"));
+              // Add "selected" class to the clicked button
+              button.classList.add("selected");
+          });
+      });
+    });
+  </script>
+
   <section class="hero">
     <div class="hero-content">
       <h1>PLAN LESS. LIVE MORE.</h1>
       <p><strong>Mustt (Adjective):</strong> Being in the joyful state of flow and bliss, when everything lines up.</p>
     </div>
-    <div class="hero-slider">
-      <div class="slides">
-        <img src="Pics/Plan Less. Live More/Image 1.png" alt="Image 1">
-        <img src="Pics/Plan Less. Live More/Image 2.png" alt="Image 2">
-        <img src="Pics/Plan Less. Live More/Image 3.png" alt="Image 3">
-        <img src="Pics/Plan Less. Live More/Image 4.png" alt="Image 4">
-      </div>
+    <div class="hero-image">
+      <img id="image" src="Pics/Plan Less. Live More/Image 1.png" alt="Image 1">
     </div>
   </section>
+  <div class="image-change-button">
+    <button class="circle-button selected" onclick="changeImageTo1();"></button>
+    <button class="circle-button" onclick="changeImageTo2();"></button>
+    <button class="circle-button" onclick="changeImageTo3();"></button>
+    <button class="circle-button" onclick="changeImageTo4();"></button>
+  </div>
 
 
    <!-- Testimonial Section -->
@@ -68,63 +107,48 @@
   
 
   <!-- Features Section -->
+  <script> 
+    function changeFeaturesImageTo1()
+    {
+      var img = document.getElementById("slide");
+      img.src = "Pics/Features Slides/Slide1.png";
+      return false;
+    }
+    function changeFeaturesImageTo2()
+    {
+      var img = document.getElementById("slide");
+      img.src = "Pics/Features Slides/Slide2.png";
+      return false;
+    }
+    function changeFeaturesImageTo3()
+    {
+      var img = document.getElementById("slide");
+      img.src = "Pics/Features Slides/Slide3.png";
+      return false;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".circle-button");
+
+      buttons.forEach(button => {
+          button.addEventListener("click", () => {
+              // Remove "selected" class from all buttons
+              buttons.forEach(btn => btn.classList.remove("selected"));
+              // Add "selected" class to the clicked button
+              button.classList.add("selected");
+          });
+      });
+    });
+  </script>
+
   <section class="features">
-    <h2>Mustt is an AI Agent-led events & activities marketplace</h2>
-    <div class="mobile-slider">
-      <div class="slides">
-        <!-- Slide 1 -->
-        <div class="slide">
-          <div class="black-background">
-            <div class="images">
-              <img src="Pics/App UX/image1.png" alt="iPhone Demo 1">
-              <img src="Pics/App UX/image2.png" alt="iPhone Demo 2">
-            </div>
-            <div class="text">
-              <p class="slide-description">Step 1: Describe your vibe</p>
-              <p class="slide-text">
-                Describe exactly what you are looking for to the AI Agent. <br>
-                If you can’t put it into words, you can even use the vibe-filters. <br>
-                We then do all the filtering and discovery for you!
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Slide 2 -->
-        <div class="slide">
-          <div class="black-background">
-            <div class="images">
-              <img src="Pics/App UX/image3.png" alt="iPhone Demo 3">
-              <img src="Pics/App UX/image4.png" alt="iPhone Demo 4">
-            </div>
-            <div class="text">
-              <p class="slide-description">Step 2: Filter the results</p>
-              <p class="slide-text">
-                Results appear as a shortlist of 8 highly personalized options with the option to view more. <br>
-                You can then filter by radius, price, and/or event type.
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Slide 3 -->
-        <div class="slide">
-          <div class="black-background">
-            <div class="images">
-              <img src="Pics/App UX/image5.png" alt="iPhone Demo 5">
-              <img src="Pics/App UX/image6.png" alt="iPhone Demo 6">
-            </div>
-            <div class="text">
-              <p class="slide-description">Step 3: Select an event & book</p>
-              <p class="slide-text">
-                Preview the events you are interested in. <br>
-                Select one, check out their social media accounts and further information if you need to. <br>
-                Then go through to booking!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="feature-slide">
+      <img id="slide" src="Pics/Features Slides/Slide1.png" alt="feature slide">
+    </div>
+    <div class="feature-change-button">
+      <button class="circle-button selected" onclick="changeFeaturesImageTo1();"></button>
+      <button class="circle-button" onclick="changeFeaturesImageTo2();"></button>
+      <button class="circle-button" onclick="changeFeaturesImageTo3();"></button>
     </div>
   </section>
   

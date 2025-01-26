@@ -86,8 +86,3 @@ document.querySelectorAll(".gender-btn").forEach((btn) => {
       document.getElementById("gender-input").value = this.dataset.value;
     });
   });
-
-
-
-  
-  
