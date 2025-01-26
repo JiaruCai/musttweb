@@ -24,6 +24,7 @@ if (heroSlides && heroSlideItems.length > 0) {
   }, 2000); // Adjust the interval duration as needed
 }
 
+//Testimonials slider
 let testimonialIndex = 0;
 const testimonials = document.querySelector(".testimonials");
 const testimonialItems = Array.from(document.querySelectorAll(".testimonials > *"));
