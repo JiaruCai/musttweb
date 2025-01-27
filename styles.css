@@ -93,13 +93,7 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
   
   
 
-  /* Responsive Adjustments for Small Screens */
-  @media (max-width: 768px) {
-    header ul {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+  
   
   
   /* Button Styles */
