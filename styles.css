@@ -23,8 +23,9 @@ header {
   
   /* Logo */
   header .logo img {
-    width: 320px; /* Small and rounded */
-    height: 120px;
+    display: flex;
+
+    width: 200px; 
     
     object-fit: cover; /* Ensures no white background is visible */
   }
