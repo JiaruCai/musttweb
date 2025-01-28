@@ -768,7 +768,7 @@ outline: none; /* Remove default focus outline */
 }
 
 .testimonials blockquote {
-  flex: 0 0 50%;  /* Make each testimonial take up 50% of the container */
+  flex: 0 0 25%;  /* Make each testimonial take up 25% of the container */
   padding: 15px;  /* Reduce padding */
 }
 
