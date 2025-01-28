@@ -772,11 +772,6 @@ outline: none; /* Remove default focus outline */
   padding: 15px;  /* Reduce padding */
 }
 
-.testimonials::after {
-  flex: 1;
-  gap: 10px;  /* Reduce gap between testimonials */
-}
-
 .one-marketplace {
   flex-direction: column; /* Stack elements vertically */
   gap: 20px; /* Reduce gap between elements */
