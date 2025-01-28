@@ -189,22 +189,15 @@ margin-bottom: 30px;
 color: #000; /* Black text for heading */
 }
 
-/* Testimonials Container */
-.testimonials-container {
-overflow: hidden; /* Ensure hidden overflow for smooth sliding */
-position: relative;
-max-width: 100%; /* Full width of the container */
-}
-
-
 .testimonials {
 display: flex;
+width: 100%;
 gap: 20px; /* Space between testimonials */
-animation: transform 0.5s ease-in-out; /* Infinite sliding effect */
+animation: moveContainer 24s infinite linear; /* Infinite sliding effect */
 }
 
 .testimonials blockquote {
-flex: 0 0 33%; /* Each testimonial takes up 33% of the container */
+flex: 0 0 33%;  /* Each testimonial takes up 33% of the container */
 font-style: italic;
 background-color: #d4f0ec; /* Light teal background */
 color: #333; /* Darker text for readability */
@@ -212,6 +205,24 @@ padding: 20px;
 border-radius: 10px; /* Rounded corners */
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 text-align: left;
+}
+
+/* Duplicate the testimonials to create a smooth, infinite scrolling effect */
+.testimonials::after {
+  content: '';
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex: 1;
+}
+
+@keyframes moveContainer {
+  0% {
+    transform: translateX(0); /* Start at the left edge */
+  }
+  100% {
+    transform: translateX(-250%); /* Move completely to the left (twice the container's width) */
+  }
 }
 
 
