@@ -762,6 +762,11 @@ outline: none; /* Remove default focus outline */
   max-width: 300px; /* Set a max width */
 }
 
+
+.testimonials {
+animation: moveContainer 8s infinite linear; /* Infinite sliding effect */
+}
+
 .testimonials blockquote {
   flex: 0 0 100%; /* Full width on smaller screens */
 }
