@@ -764,7 +764,17 @@ outline: none; /* Remove default focus outline */
 
 
 .testimonials {
-animation: moveContainer 8s infinite linear; /* Infinite sliding effect */
+  animation: moveContainer 8s infinite linear; /* Speed up the animation */
+}
+
+.testimonials blockquote {
+  flex: 0 0 50%;  /* Make each testimonial take up 50% of the container */
+  padding: 15px;  /* Reduce padding */
+}
+
+.testimonials::after {
+  flex: 1;
+  gap: 10px;  /* Reduce gap between testimonials */
 }
 
 .one-marketplace {
