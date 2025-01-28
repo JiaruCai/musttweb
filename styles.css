@@ -1,5 +1,361 @@
 html, body { 
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #000;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .logo img {
+  width: 200px;
+  object-fit: cover;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a,
+button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+header ul li a:hover,
+button:hover {
+  background-color: #283231;
+  color: #fff;
+}
+
+/* Share Button */
+.share-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.share-btn:hover {
+  background-color: #00c3a0;
+  color: #000;
+}
+
+/* General Button Styles */
+a.sign-up-btn, a.btn.sign-up {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00c3a0;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+a.sign-up-btn:hover, a.btn.sign-up:hover {
+  background-color: #008b6e;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.hero-slider {
+  width: 50%;
+  overflow: hidden;
+}
+
+.hero-slider .slides {
+  display: flex;
+}
+
+.hero-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+/* Discover Section */
+.discover {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.discover h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.testimonials {
+  display: flex;
+  gap: 20px;
+  animation: moveContainer 24s infinite linear;
+}
+
+.testimonials blockquote {
+  flex: 0 0 33%;
+  padding: 20px;
+  background-color: #d4f0ec;
+  color: #333;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes moveContainer {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+/* Key Features Section */
+.key-features {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+.key-features h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-bubble {
+  background-color: #000;
+  color: #00c3a0;
+  border: 2px solid #00c3a0;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-bubble:hover {
+  transform: scale(1.05);
+  background-color: #00c3a0;
+  color: #fff;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Footer Links */
+.footer .links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .links ul li {
+  margin-bottom: 10px;
+}
+
+.footer .links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer .links ul li a:hover {
+  color: #00c3a0;
+}
+
+/* Sign-Up Section */
+.sign-up {
+  padding: 30px 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.sign-up-form {
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.sign-up-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sign-up-form input,
+.sign-up-form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sign-up-form input:focus {
+  border-color: #00c3a0;
+}
+
+.sign-up-form button {
+  background-color: #00c3a0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-form button:hover {
+  background-color: #008b6e;
+}
+
+/* Gender Selection Section */
+.gender-selection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gender-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00c3a0;
+  background-color: #fff;
+  border: 2px solid #00c3a0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gender-btn.active {
+  background-color: #00c3a0;
+  color: #fff;
+}
+
+.gender-btn:hover {
+  background-color: #e8f9f4;
+  color: #00c3a0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sign-up-form {
+    max-width: 100%;
+  }
+
+  .gender-selection {
+    flex-direction: column;
+  }
+}
+
+
+html, body { 
+  overflow-x: hidden;
 }
 
 /* General Styles */
