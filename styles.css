@@ -1000,6 +1000,10 @@ transition: background-color 0.3s ease;
 background-color: #008b6e; /* Darker teal on hover */
 }
 
+.submit {
+  padding-top: 20px;
+}
+
 /* Gender Selection Section */
 .gender-selection {
 display: flex;

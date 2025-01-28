@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 <body>
     <header>
@@ -59,14 +61,18 @@
         </div>
         <input type="hidden" name="Gender" id="gender-input">
 
-
-      <label for="phone-number">What is your phone number?</label>
-      <input id="phone-number" name="Phone Number" type="tel" placeholder="+XX XXXX XXXX" required>
-
+        <label for="phone-number">What is your phone number?</label>
+        <input id="phone" type="tel" name="phone" />
+      
+      <div class="submit">
       <button type="submit">Submit</button>
+      </div>
+
     </form>
   </section>
+
   <script src="script.js"></script> <!-- Link to your JavaScript file -->
+  
   <script>
     // Function to redirect after form submission
     function redirectToHome(event) {
@@ -81,4 +87,10 @@
   
 
 </body>
+
+<script>
+  const phoneInputField = document.querySelector("#phone");
+  const phoneInput = window.intlTelInput(phoneInputField, {utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",});
+</script>
+
 </html>
