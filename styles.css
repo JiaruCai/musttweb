@@ -1060,6 +1060,15 @@ outline: none; /* Remove default focus outline */
 }
 }
 
+@keyframes moveSlides {
+  0% {
+    transform: translateX(0); /* Start at the left edge */
+  }
+  100% {
+    transform: translateX(-300%); /* Move completely to the left (twice the container's width) */
+  }
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
 .black-background {
@@ -1128,7 +1137,7 @@ outline: none; /* Remove default focus outline */
 
 
 .testimonials {
-  animation: moveContainer 12s infinite linear; /* Speed up the animation */
+  animation: moveSlides 12s infinite linear; /* Speed up the animation */
 }
 
 .testimonials blockquote {
