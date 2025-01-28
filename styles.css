@@ -767,10 +767,6 @@ outline: none; /* Remove default focus outline */
 animation: moveContainer 8s infinite linear; /* Infinite sliding effect */
 }
 
-.testimonials blockquote {
-  flex: 0 0 100%; /* Full width on smaller screens */
-}
-
 .one-marketplace {
   flex-direction: column; /* Stack elements vertically */
   gap: 20px; /* Reduce gap between elements */
