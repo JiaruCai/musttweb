@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #000;
+  background-color: #101010;
   padding: 10px 20px;
 }
 
@@ -27,11 +27,13 @@ header {
   margin: 0 auto;
 }
 
+/* Logo Size */
 header .logo img {
   width: 200px;
   object-fit: cover;
 }
 
+/* Navigation List */
 header ul {
   list-style: none;
   display: flex;
@@ -41,31 +43,39 @@ header ul {
   padding: 0;
 }
 
-header ul li a,
-button {
-  text-decoration: none;
-  color: #fff;
-  background-color: #000;
-  padding: 5px 15px;
-  border-radius: 50px;
+/* Button & Link Styling */
+button,
+a.sign-up-btn, 
+a.btn.sign-up, 
+.share-btn, 
+header ul li a {
+  font-size: 16px; /* Ensuring same font size */
   font-weight: bold;
-  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
   cursor: pointer;
-  border: none;
+  display: inline-block;
   transition: all 0.3s ease;
 }
 
-header ul li a:hover,
-button:hover {
-  background-color: #283231;
+/* Sign-Up Button */
+a.sign-up-btn, 
+a.btn.sign-up {
+  background-color: #00c3a0;
   color: #fff;
+}
+
+a.sign-up-btn:hover, 
+a.btn.sign-up:hover {
+  background-color: #008b6e;
 }
 
 /* Share Button */
 .share-btn {
   background-color: #fff;
   color: #000;
-  border: none;
 }
 
 .share-btn:hover {
@@ -73,50 +83,110 @@ button:hover {
   color: #000;
 }
 
-/* General Button Styles */
-a.sign-up-btn, a.btn.sign-up {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
+/* Navigation Links */
+header ul li a {
+  background-color: transparent;
   color: #fff;
-  background-color: #00c3a0;
-  border-radius: 25px;
-  text-align: center;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
 }
 
-a.sign-up-btn:hover, a.btn.sign-up:hover {
-  background-color: #008b6e;
+header ul li a:hover {
+  background-color: #283231;
+  color: #fff;
 }
 
+
+
+/* Hero Section */
 /* Hero Section */
 .hero {
   display: flex;
+  flex-direction: row; /* Ensures horizontal layout */
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 80px 50px;
   background-color: #f5f5f5;
+  min-height: 560px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 50px; /* Ensures space between text and image */
 }
 
-.hero-slider {
-  width: 50%;
-  overflow: hidden;
+/* Text Container */
+.hero-content {
+  flex: 1; /* Takes up available space */
+  max-width: 50%; /* Ensures it stays on the left */
 }
 
-.hero-slider .slides {
-  display: flex;
+/* PLAN LESS. LIVE MORE. */
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  display: block;
+  max-width: 100%;
 }
 
+/* Mustt (Adjective): */
+.hero-subtitle {
+  font-family: "Georgia", serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Being in the joyful state... */
+.hero-description {
+  font-family: "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+/* Image Container */
 .hero-image {
-  width: 50%;
+  flex: 1; /* Takes available space */
+  max-width: 50%; /* Ensures it stays on the right */
   overflow: hidden;
+  display: flex;
+  justify-content: flex-end; /* Aligns image to the right */
 }
 
 .hero-image img {
   width: 100%;
+  display: block;
+  border-radius: 15px; /* Adjusted for soft corners */
 }
+
+/* Centering the Image Change Buttons */
+.image-change-button {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Discover Section */
 .discover {
@@ -126,12 +196,15 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 }
 
 .discover h2 {
+  margin-top: 100px;
   font-size: 24px;
   font-weight: bold;
   color: #000;
+  margin-bottom: 100px;
 }
 
 .testimonials {
+  margin-top: 100px;
   display: flex;
   gap: 20px;
   animation: moveContainer 24s infinite linear;
@@ -319,9 +392,6 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-  }
 
   .header-container {
     flex-direction: column;
@@ -369,7 +439,8 @@ body {
 /* Header Styles */
 /* General Header Styles */
 header {
-  background-color: #000; /* Black background */
+  background-color: #101010
+  ; /* Black background */
   padding: 10px 20px; /* Thin and delicate padding */
 }
 
@@ -493,47 +564,43 @@ header ul li a:hover {
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  background-color: #f5f5f5;
+  flex-direction: column; /* Stack elements vertically */
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.hero-slider {
-  width: 50%;
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-slider .slides {
-  display: flex;
-}
-
-.hero-slider img {
-  width: 100%;
+.hero-content {
+  width: 100%; /* Full width */
 }
 
 .hero-image {
-  display: flex;
-  width: 50%;
-  overflow: hidden;
-  position: relative;
+  width: 100%; /* Full width */
+  margin-bottom: 20px;
 }
 
-.hero-image img {
-  width: 100%;
+.hero-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
 }
 
 .image-change-button {
-  width: 50%;
-  padding-left: 50%;
-  background-color: #f5f5f5;
-  padding-bottom: 10px;
+  gap: 8px;
 }
+
+.circle-button {
+  width: 10px;
+  height: 10px;
+}
+
+
 
 /* Discover Section */
 .discover {
@@ -805,6 +872,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 20px; /* Space between buttons */
+
 }
 
 .btn {
@@ -839,9 +907,10 @@ background-color: #f7d6a5; /* Darker beige on hover */
 
 /* Note Below Buttons */
 .waitlist .note {
-font-size: 14px;
+font-size: 10px;
 color: #333; /* Dark grey text */
 margin-top: 20px;
+text-align: center;
 }
 
 
@@ -1084,40 +1153,35 @@ outline: none; /* Remove default focus outline */
   text-align: center;
 }
 
-.hero-content {
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-  padding-right: 60px;
+
+/* Hero Section */
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  order: 1; /* Move below the image */
 }
 
-.hero-content h1 {
-  padding-right: 20px;
+.hero-description {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 90%;
+  order: 2; /* Move below the subtitle */
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-image {
-  display: flex;
-  width: 100%;
-  padding-left: 5%;
-  padding-bottom: 1%;
-}
-
-.circle-button {
-  flex-direction: row;
-  scale: 0.5;
+.hero-slider {
+  display: none; /* Hide hero slider on mobile if not needed */
 }
 
 .image-change-button {
-  width: 50%;
-  padding-left: 30%;
-  padding-right: 50%;
-  padding-bottom: 0;
+  width: 100%;
+  padding-left: 0;
 }
+
+
+
 
 .features-grid {
   flex-direction: column; /* Stack bubbles vertically */
@@ -1169,14 +1233,14 @@ outline: none; /* Remove default focus outline */
 }
 
 .footer .links {
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px; /* Adjust gap for vertical layout */
 }
 
 
 /* Header adjustments for mobile */
 .header-container {
-  flex-direction: column; /* Stack header elements vertically */
+  flex-direction: row; /* Stack header elements vertically */
   align-items: center; /* Center-align elements */
   gap: 10px; /* Add spacing between elements */
 }
@@ -1186,13 +1250,13 @@ outline: none; /* Remove default focus outline */
 }
 
 .header-container .buttons {
-  flex-direction: column; /* Stack buttons vertically */
+  flex-direction: row; /* Stack buttons vertically */
   align-items: center; /* Center-align buttons */
   gap: 10px; /* Add spacing between buttons */
 }
 
 .header-container ul {
-  flex-direction: column; /* Stack navigation links vertically */
+  flex-direction: row; /* Stack navigation links vertically */
   align-items: center; /* Center-align navigation links */
   gap: 10px; /* Add spacing between links */
 }
@@ -1203,13 +1267,13 @@ outline: none; /* Remove default focus outline */
 
 .sign-up-btn {
   padding: 10px 20px; /* Adjust button size */
-  font-size: 14px; /* Adjust font size */
+  font-size: 12px; /* Adjust font size */
   text-align: center;
 }
 
 .share-btn {
   padding: 10px 20px; /* Adjust button size */
-  font-size: 14px; /* Adjust font size */
+  font-size: 12px; /* Adjust font size */
   text-align: center;
 }
 

@@ -63,7 +63,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       const buttons = document.querySelectorAll(".circle-button");
 
-      buttons.forEach(button => {
+    buttons.forEach(button => {
           button.addEventListener("click", () => {
               // Remove "selected" class from all buttons
               buttons.forEach(btn => btn.classList.remove("selected"));
@@ -75,20 +75,26 @@
   </script>
 
   <section class="hero">
-    <div class="hero-content">
-      <h1>PLAN LESS. LIVE MORE.</h1>
-      <p><strong>Mustt (Adjective):</strong> Being in the joyful state of flow and bliss, when everything lines up.</p>
-    </div>
+      <div class="hero-content">
+        <h1 class="hero-title">PLAN LESS.<br>LIVE MORE.</h1>
+        <p class="hero-subtitle"><strong>Mustt</strong> (Adjective):</p>
+        <p class="hero-description">Being in the joyful state of flow and bliss, when everything lines up.</p>
+    </div> 
+  
+  
     <div class="hero-image">
       <img id="image" src="./Pics/Plan Less. Live More/Image 1.png" alt="Image 1">
     </div>
-  </section>
+ 
   <div class="image-change-button">
     <button class="circle-button selected" onclick="changeImageTo1();"></button>
     <button class="circle-button" onclick="changeImageTo2();"></button>
     <button class="circle-button" onclick="changeImageTo3();"></button>
     <button class="circle-button" onclick="changeImageTo4();"></button>
   </div>
+
+</section>
+
 
 
    <!-- Testimonial Section -->
@@ -247,5 +253,3 @@
 
 
 
-</body>
-</html>
