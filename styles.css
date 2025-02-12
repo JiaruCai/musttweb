@@ -1153,6 +1153,61 @@ outline: none; /* Remove default focus outline */
   text-align: center;
 }
 
+/* Header Section */
+
+.header-container {
+  display: flex;
+  flex-direction: column; /* Ensure all items are in a single row */
+  align-items: center;
+  justify-content: space-between; /* Spread elements evenly */
+  flex-wrap: wrap; /* Prevent overflow */
+  padding: 0.5rem 1rem;
+}
+
+.header-container .logo img {
+  max-width: 4rem; /* Scale down logo */
+  height: auto;
+}
+
+.header-container .buttons {
+  display: flex;
+  flex-direction: row; /* Keep buttons in a row */
+  gap: 0.5rem;
+}
+
+.header-container ul {
+  display: flex;
+  flex-direction: row; /* Ensure nav items are in a row */
+  gap: 0.2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-container ul li {
+  display: inline-block;
+}
+
+.sign-up-btn,
+.share-btn {
+  font-size: 0.8rem; /* Adjust font size */
+  padding: 0.5rem 1rem; /* Ensure consistency */
+  white-space: nowrap; /* Prevent breaking */
+}
+
+/* Ensure navigation and buttons fit well */
+.nav-links {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Center nav links */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 
 /* Hero Section */
 
@@ -1238,44 +1293,6 @@ outline: none; /* Remove default focus outline */
 }
 
 
-/* Header adjustments for mobile */
-.header-container {
-  flex-direction: row; /* Stack header elements vertically */
-  align-items: center; /* Center-align elements */
-  gap: 10px; /* Add spacing between elements */
-}
-
-.header-container .logo img {
-  max-width: 120px; /* Resize logo for smaller screens */
-}
-
-.header-container .buttons {
-  flex-direction: row; /* Stack buttons vertically */
-  align-items: center; /* Center-align buttons */
-  gap: 10px; /* Add spacing between buttons */
-}
-
-.header-container ul {
-  flex-direction: row; /* Stack navigation links vertically */
-  align-items: center; /* Center-align navigation links */
-  gap: 10px; /* Add spacing between links */
-}
-
-.header-container ul li {
-  margin: 0; /* Remove extra margin */
-}
-
-.sign-up-btn {
-  padding: 10px 20px; /* Adjust button size */
-  font-size: 12px; /* Adjust font size */
-  text-align: center;
-}
-
-.share-btn {
-  padding: 10px 20px; /* Adjust button size */
-  font-size: 12px; /* Adjust font size */
-  text-align: center;
-}
 
 /* Sign up form adjustments for mobile */
 .sign-up-form {
