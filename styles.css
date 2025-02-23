@@ -1287,8 +1287,9 @@ outline: none; /* Remove default focus outline */
 }
 
 .feature-bubble {
-  width: 100%; /* Take full width */
-  max-width: 300px; /* Set a max width */
+  max-width: 240px; /* Reduce further for very small screens */
+  font-size: 12px;
+  padding: 8px;
 }
 
 
