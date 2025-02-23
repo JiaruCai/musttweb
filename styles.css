@@ -109,13 +109,13 @@ header ul li a:hover {
   min-height: 560px;
   margin: 0 auto;
   text-align: left;
-  gap: 50px; /* Ensures space between text and image */
+  gap: 50px; /* Ensures space between text and images */
 }
 
 /* Text Container */
 .hero-content {
-  flex: 1; /* Takes up available space */
-  max-width: 50%; /* Ensures it stays on the left */
+  flex: 1;
+  max-width: 50%;
 }
 
 /* PLAN LESS. LIVE MORE. */
@@ -147,29 +147,34 @@ header ul li a:hover {
   margin-top: 5px;
 }
 
-/* Image Container */
-.hero-image {
-  flex: 1; /* Takes available space */
-  max-width: 50%; /* Ensures it stays on the right */
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end; /* Aligns image to the right */
-}
 
-.hero-image img {
-  width: 100%;
-  display: block;
-  border-radius: 15px; /* Adjusted for soft corners */
-}
-
-/* Centering the Image Change Buttons */
-.image-change-button {
+/* Hero Image Slider */
+.hero-slider {
+  flex: 1;
+  max-width: 50%;
+  overflow: hidden; /* Hides overflow */
   display: flex;
-  justify-content: center; /* Centers the buttons horizontally */
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-top: 20px;
+  position: relative;
 }
+
+/* Slides Container */
+.slides {
+  display: flex;
+  white-space: nowrap; /* Keeps images in one line */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Image Styling */
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  flex-shrink: 0; /* Prevents resizing */
+}
+
+
 
 
 
@@ -838,6 +843,8 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 
 .one-marketplace .text {
 max-width: 500px; /* Limit the width of the text */
+text-align: center; /* Center text content */
+margin: 0 auto; /* Ensures centering */
 }
 
 .one-marketplace h2 {
@@ -912,6 +919,35 @@ color: #333; /* Dark grey text */
 margin-top: 20px;
 text-align: center;
 }
+
+
+
+/* buy me a coffee */
+#buy-me-a-coffee {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: white; /* White background */
+  border: 1px solid #ffffff; /* Yellow border */
+  border-radius: 8px;
+}
+
+#buy-me-a-coffee p {
+  font-weight: bold; /* Bold text */
+  font-size: 16px;
+  color: #333; /* Dark grey for better contrast */
+}
+
+
+#buy-me-a-coffee img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#buy-me-a-coffee img:hover {
+  transform: scale(1.1);
+}
+
+
 
 
 
@@ -1209,6 +1245,12 @@ outline: none; /* Remove default focus outline */
 }
 
 
+
+
+
+
+
+
 /* Hero Section */
 
 .hero-subtitle {
@@ -1228,11 +1270,6 @@ outline: none; /* Remove default focus outline */
 
 .hero-slider {
   display: none; /* Hide hero slider on mobile if not needed */
-}
-
-.image-change-button {
-  width: 100%;
-  padding-left: 0;
 }
 
 

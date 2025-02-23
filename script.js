@@ -1,3 +1,36 @@
+// Hero Image Slider
+document.addEventListener("DOMContentLoaded", function () {
+  let heroIndex = 0;
+  const heroSlides = document.querySelector(".hero-slider .slides");
+  const heroSlideItems = document.querySelectorAll(".hero-slider .slides img");
+  const slideWidth = heroSlideItems[0].clientWidth;
+
+  if (heroSlides && heroSlideItems.length > 0) {
+      // Clone all images for a seamless loop
+      heroSlides.innerHTML += heroSlides.innerHTML;
+      const totalSlides = document.querySelectorAll(".hero-slider .slides img").length;
+
+      setInterval(() => {
+          heroIndex++;
+          heroSlides.style.transition = "transform 0.5s ease-in-out";
+          heroSlides.style.transform = `translateX(-${heroIndex * slideWidth}px)`;
+
+          // Reset when reaching the duplicated set
+          if (heroIndex === heroSlideItems.length) {
+              setTimeout(() => {
+                  heroSlides.style.transition = "none";
+                  heroSlides.style.transform = "translateX(0)";
+                  heroIndex = 0;
+              }, 500); // Match this to transition duration
+          }
+      }, 2000); // Adjust speed as needed
+  }
+});
+
+
+
+
+
 //Testimonials slider
 let testimonialIndex = 0;
 const testimonials = document.querySelector(".testimonials");
@@ -37,6 +70,7 @@ if (testimonials && testimonialItems.length > 0) {
 }
 
 
+
 // Mobile Features Slider
 let mobileIndex = 0;
 const mobileSlides = document.querySelector(".mobile-slider .slides");
@@ -46,6 +80,17 @@ if (mobileSlides) {
     mobileSlides.style.transform = `translateX(-${mobileIndex * 100}%)`;
   }, 5000);
 }
+
+// buy me a coffee
+document.addEventListener("DOMContentLoaded", function () {
+  let coffeeSection = document.getElementById("buy-me-a-coffee");
+  coffeeSection.style.opacity = "0";
+  coffeeSection.style.transition = "opacity 1s ease-in-out";
+
+  setTimeout(() => {
+      coffeeSection.style.opacity = "1";
+  }, 500);
+});
 
 // Gender button 
 document.querySelectorAll(".gender-btn").forEach((btn) => {
