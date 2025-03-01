@@ -79,54 +79,62 @@
       <blockquote>“I will finally be able to make plans with my friends without the hassle.”</blockquote>
     </div>
   </section>
-  
+ 
 
-  <!-- Features Section -->
-  <script> 
-    function changeFeaturesImageTo1()
-    {
-      var img = document.getElementById("slide");
-      img.src = "./Pics/Features Slides/Slide1.png";
-      return false;
-    }
-    function changeFeaturesImageTo2()
-    {
-      var img = document.getElementById("slide");
-      img.src = "./Pics/Features Slides/Slide2.png";
-      return false;
-    }
-    function changeFeaturesImageTo3()
-    {
-      var img = document.getElementById("slide");
-      img.src = "./Pics/Features Slides/Slide3.png";
-      return false;
-    }
+<!-- Features Section -->
+<section class="features">
+  <!-- Slide 1 (Now with ID) -->
+  <div class="feature-slide-container" id="slide1">
+      <div class="phone-container">
+          <img src="./Pics/App UX/image1.png" alt="Feature Image 1">
+          <img src="./Pics/App UX/image2.png" alt="Feature Image 2">
+      </div>
+      <div class="text-container">
+          <div class="step-number">Step 1: Describe your vibe</div>
+          <p>Describe exactly what you are looking for to the AI Agent.</p>
+          <p>If you can’t put it into words, you can use the vibe-filters.</p>
+          <p>We then do all the filtering and discovery for you!</p>
+      </div>
+  </div>
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".circle-button");
+  <!-- Slide 2 -->
+  <div class="feature-slide-container" style="display: none;" id="slide2">
+      <div class="phone-container">
+          <img src="./Pics/App UX/image3.png" alt="Feature Image 3">
+          <img src="./Pics/App UX/image4.png" alt="Feature Image 4">
+      </div>
+      <div class="text-container">
+          <div class="step-number">Step 2: Filter the results</div>
+          <p>Results appear as a shortlist of 8 highly personalized options.</p>
+          <p>You can then filter by radius, price, and event type.</p>
+      </div>
+  </div>
 
-      buttons.forEach(button => {
-          button.addEventListener("click", () => {
-              // Remove "selected" class from all buttons
-              buttons.forEach(btn => btn.classList.remove("selected"));
-              // Add "selected" class to the clicked button
-              button.classList.add("selected");
-          });
-      });
-    });
-  </script>
+  <!-- Slide 3 -->
+  <div class="feature-slide-container" style="display: none;" id="slide3">
+      <div class="phone-container">
+          <img src="./Pics/App UX/image5.png" alt="Feature Image 5">
+          <img src="./Pics/App UX/image6.png" alt="Feature Image 6">
+      </div>
+      <div class="text-container">
+          <div class="step-number">Step 3: Select an event & book</div>
+          <p>Preview the events you are interested in.</p>
+          <p>Select one, check out their social media accounts for more info, then book!</p>
+      </div>
+  </div>
 
-  <section class="features">
-    <div class="feature-slide">
-      <img id="slide" src="./Pics/Features Slides/Slide1.png" alt="feature slide">
-    </div>
-    <div class="feature-change-button">
-      <button class="circle-button selected" onclick="changeFeaturesImageTo1();"></button>
-      <button class="circle-button" onclick="changeFeaturesImageTo2();"></button>
-      <button class="circle-button" onclick="changeFeaturesImageTo3();"></button>
-    </div>
-  </section>
-  
+  <div class="feature-change-button">
+      <button class="circle-button selected" onclick="showSlide(1);"></button>
+      <button class="circle-button" onclick="showSlide(2);"></button>
+      <button class="circle-button" onclick="showSlide(3);"></button>
+  </div>
+</section>
+
+
+
+    
+
+    
  <!-- Key Features Section -->
   <section class="key-features">
     <h3>Key Features:</h3>
@@ -206,4 +214,32 @@
         </ul>
       </div>
       <div class="social-icons">
-        <a href="https://www.instagram.com/musttmarketplace?igsh=MXkwemJlOHViMndhaw%3D%3D&utm_source=qr" target="_bl
+        <a href="https://www.instagram.com/musttmarketplace?igsh=MXkwemJlOHViMndhaw%3D%3D&utm_source=qr" target="_blank">
+          <img src="Pics/Icons and Logos/Instagram Logo.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.tiktok.com/@musttmarketplace?_t=ZG-8stH2LEDmEb&_r=1" target="_blank">
+          <img src="Pics/Icons and Logos/TikTok Logo.png" alt="TikTok Logo">
+        </a>
+        <a href="https://youtube.com/@musttmarketplace?si=uW_hfOYZkxwKvEqd" target="_blank">
+          <img src="Pics/Icons and Logos/Youtube Logo.png" alt="YouTube Logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+
+
+
+
+    <!-- Javascript -->
+  <script src="script.js"></script>
+ 
+
+
+
+
+
+</body>
+</html>

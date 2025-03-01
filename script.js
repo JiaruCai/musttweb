@@ -70,16 +70,39 @@ if (testimonials && testimonialItems.length > 0) {
 }
 
 
+// Function to switch slides
+function showSlide(slideNumber) {
+  // Hide all slides
+  document.querySelectorAll(".feature-slide-container").forEach((slide) => {
+      slide.style.display = "none";
+  });
 
-// Mobile Features Slider
-let mobileIndex = 0;
-const mobileSlides = document.querySelector(".mobile-slider .slides");
-if (mobileSlides) {
-  setInterval(() => {
-    mobileIndex = (mobileIndex + 1) % 3; // Adjust for the number of images
-    mobileSlides.style.transform = `translateX(-${mobileIndex * 100}%)`;
-  }, 5000);
+  // Show the selected slide
+  let activeSlide = document.getElementById("slide" + slideNumber);
+  if (activeSlide) {
+      activeSlide.style.display = "flex"; // Ensure it's visible
+  }
+
+  // Update button styles
+  document.querySelectorAll(".circle-button").forEach((btn, index) => {
+      btn.classList.toggle("selected", index === slideNumber - 1);
+  });
 }
+
+// Automatically rotate slides every 5 seconds
+let currentSlide = 1;
+setInterval(() => {
+  currentSlide = (currentSlide % 3) + 1;
+  showSlide(currentSlide);
+}, 5000);
+
+// Ensure Slide 1 loads correctly when the page opens
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(1);
+});
+
+
+
 
 // buy me a coffee
 document.addEventListener("DOMContentLoaded", function () {

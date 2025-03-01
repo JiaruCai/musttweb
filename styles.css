@@ -234,6 +234,13 @@ header ul li a:hover {
   }
 }
 
+/* Phone Features Section */
+
+
+
+
+
+
 /* Key Features Section */
 .key-features {
   text-align: center;
@@ -394,40 +401,6 @@ header ul li a:hover {
   background-color: #e8f9f4;
   color: #00c3a0;
 }
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .features-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer .links {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .sign-up-form {
-    max-width: 100%;
-  }
-
-  .gender-selection {
-    flex-direction: column;
-  }
-}
-
 
 html, body { 
   overflow-x: hidden;
@@ -658,119 +631,106 @@ text-align: left;
 }
 
 
+
+
 /* Features Section */
+/* Features Section: Black Background */
+.features {
+  background-color: black;
+  padding: 30px 15%; /* Adds more space to the left and right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px;
+  margin-bottom: 50px; /* Space between black and white background */
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Feature Slide Container - Layout Fix */
+.feature-slide-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+/* Phone Container */
+.phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+}
+
+/* Ensure both phone images are the same size */
+.phone-container img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+/* Right Side - Text Container */
+.text-container {
+  flex: 1;
+  text-align: left;
+  max-width: 450px;
+  color: #00d9d9;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 50px; /* More spacing between images and text */
+  min-height: 160px; /* Keeps text area consistent between slides */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Step Indicator - Upper Right */
+.step-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Styling text for emphasis */
+.text-container p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Circle Buttons */
 .feature-change-button {
-height: 50px;
-background-color: black;
-padding: 0 20px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
 }
 
+/* Updated button styling - Round Shape */
 .circle-button {
-padding: 0 20px;
-width: 40px;
-height: 40px;
-background-color: tan;
-border: none;
-border-radius: 50%;
-cursor: pointer;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-transition: transform 0.2s ease;
-}
-
-.circle-button:hover {
-transform: scale(1.1);
-}
-
-.circle-button:active {
-transform: scale(0.95);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: gray;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
 
 .circle-button.selected {
-background-color: teal; /* Selected color */
-}
-
-.features {
-text-align: center;
-padding: 50px 20px;
-}
-
-.features h2 {
-font-size: 24px;
-margin-bottom: 20px;
-}
-
-.feature-slide {
-width: 100%;
-overflow: hidden;
-position: relative;
-display: flex;
-}
-
-.feature-slide img {
-width: 100%;
-}
-
-/* Mobile Slider */
-.mobile-slider {
-position: relative;
-overflow: hidden;
-max-width: 1200px;
-margin: 0 auto;
-}
-
-.slides {
-display: flex;
-}
-
-.slide {
-min-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.black-background {
-background-color: #000; /* Black background */
-color: #fff; /* Default white text */
-padding: 50px 40px; /* Increase padding to make it larger */
-border-radius: 10px; /* Rounded corners */
-display: flex;
-flex-direction: row; /* Keep images and text side by side */
-align-items: center; /* Align content vertically */
-justify-content: space-between; /* Space out images and text */
-gap: 40px; /* Increase gap between elements */
-min-height: 400px; /* Ensure a minimum height */
-width: 100%; /* Expand to full container width */
+  background-color: #00d9d9;
+  border: 2px solid white;
 }
 
 
-.images img {
-width: 150px;
-height: auto;
-border-radius: 10px;
-}
 
-/* Text Styling Inside Black Background */
-.text {
-text-align: left;
-max-width: 400px;
-}
 
-.slide-description {
-font-size: 18px;
-font-weight: bold;
-color: #fff; /* White font */
-margin-bottom: 10px;
-font-weight: bold;
-}
-
-.slide-text {
-font-size: 14px;
-color: #00c3a0; /* Teal font */
-line-height: 1.6;
-font-weight: bold;
-}
 
 
 /* Key Features Section */
@@ -1174,6 +1134,39 @@ outline: none; /* Remove default focus outline */
   }
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sign-up-form {
+    max-width: 100%;
+  }
+
+  .gender-selection {
+    flex-direction: column;
+  }
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
 .black-background {
@@ -1275,6 +1268,64 @@ outline: none; /* Remove default focus outline */
 
 
 
+
+.testimonials {
+  animation: moveSlides 12s infinite linear; /* Speed up the animation */
+}
+
+.testimonials blockquote {
+  flex: 0 0 25%;  /* Make each testimonial take up 25% of the container */
+  padding: 15px;  /* Reduce padding */
+}
+
+
+
+/* phone feature display */
+
+.feature-slide-container {
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items */
+  text-align: center;
+}
+
+.phone-container {
+  width: 100%; /* Allow full width */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phone-container img {
+  width: 80%; /* Make images responsive */
+  max-width: 280px; /* Prevent images from being too large */
+}
+
+.text-container {
+  max-width: 90%;
+  padding-left: 0; /* Remove left padding for small screens */
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Add spacing between images and text */
+}
+
+.step-number {
+  font-size: 20px; /* Reduce font size for smaller screens */
+  text-align: center;
+}
+
+.feature-change-button {
+  margin-top: 15px;
+  gap: 8px; /* Reduce button spacing */
+}
+
+.circle-button {
+  width: 12px;
+  height: 12px;
+}
+
+/* key features display */
+
+
+
 .features-grid {
   flex-direction: column; /* Stack bubbles vertically */
   align-items: center;
@@ -1293,14 +1344,8 @@ outline: none; /* Remove default focus outline */
 }
 
 
-.testimonials {
-  animation: moveSlides 12s infinite linear; /* Speed up the animation */
-}
+/* one marketplace */
 
-.testimonials blockquote {
-  flex: 0 0 25%;  /* Make each testimonial take up 25% of the container */
-  padding: 15px;  /* Reduce padding */
-}
 
 .one-marketplace {
   flex-direction: column; /* Stack elements vertically */
@@ -1319,6 +1364,9 @@ outline: none; /* Remove default focus outline */
   flex-direction: column; /* Stack buttons vertically */
   gap: 10px; /* Reduce gap between buttons */
 }
+
+
+
 
 .footer-content {
   flex-direction: column;

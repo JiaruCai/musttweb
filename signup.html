@@ -87,4 +87,26 @@
     </form>
   </section>
 
-  <script src="script.js"></
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+  
+  <script>
+    // Function to redirect after form submission
+    function redirectToHome(event) {
+      // Let the form submit normally
+      setTimeout(() => {
+        // Redirect to the desired page
+        window.location.href = 'index.html';
+      }, 100); // Slight delay to allow form submission
+    }
+  </script>
+
+  
+
+</body>
+
+<script>
+  const phoneInputField = document.querySelector("#phone");
+  const phoneInput = window.intlTelInput(phoneInputField, {utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",});
+</script>
+
+</html>
