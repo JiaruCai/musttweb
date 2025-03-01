@@ -673,6 +673,8 @@ text-align: left;
   height: auto;
   object-fit: contain;
   border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /* Right Side - Text Container */
@@ -683,7 +685,7 @@ text-align: left;
   color: #00d9d9;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 50px; /* More spacing between images and text */
+  padding-left: 200px; /* More spacing between images and text */
   min-height: 160px; /* Keeps text area consistent between slides */
   display: flex;
   flex-direction: column;
