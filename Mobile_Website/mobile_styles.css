@@ -1,0 +1,1399 @@
+html, body { 
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #101010;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Size */
+header .logo img {
+  width: 200px;
+  object-fit: cover;
+}
+
+/* Navigation List */
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Button & Link Styling */
+button,
+a.sign-up-btn, 
+a.btn.sign-up, 
+.share-btn, 
+header ul li a {
+  font-size: 16px; /* Ensuring same font size */
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Sign-Up Button */
+a.sign-up-btn, 
+a.btn.sign-up {
+  background-color: #00c3a0;
+  color: #fff;
+}
+
+a.sign-up-btn:hover, 
+a.btn.sign-up:hover {
+  background-color: #008b6e;
+}
+
+/* Share Button */
+.share-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.share-btn:hover {
+  background-color: #00c3a0;
+  color: #000;
+}
+
+/* Navigation Links */
+header ul li a {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header ul li a:hover {
+  background-color: #283231;
+  color: #fff;
+}
+
+
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: row; /* Ensures horizontal layout */
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  background-color: #f5f5f5;
+  min-height: 560px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 50px; /* Ensures space between text and images */
+}
+
+/* Text Container */
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* PLAN LESS. LIVE MORE. */
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  display: block;
+  max-width: 100%;
+}
+
+/* Mustt (Adjective): */
+.hero-subtitle {
+  font-family: "Georgia", serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Being in the joyful state... */
+.hero-description {
+  font-family: "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+
+/* Hero Image Slider */
+.hero-slider {
+  flex: 1;
+  max-width: 50%;
+  overflow: hidden; /* Hides overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Slides Container */
+.slides {
+  display: flex;
+  white-space: nowrap; /* Keeps images in one line */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Image Styling */
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  flex-shrink: 0; /* Prevents resizing */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Discover Section */
+.discover {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.discover h2 {
+  margin-top: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.testimonials {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  animation: moveContainer 24s infinite linear;
+}
+
+.testimonials blockquote {
+  flex: 0 0 33%;
+  padding: 20px;
+  background-color: #d4f0ec;
+  color: #333;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes moveContainer {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+/* Phone Features Section */
+
+
+
+
+
+
+/* Key Features Section */
+.key-features {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+.key-features h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-bubble {
+  background-color: #000;
+  color: #00c3a0;
+  border: 2px solid #00c3a0;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-bubble:hover {
+  transform: scale(1.05);
+  background-color: #00c3a0;
+  color: #fff;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Footer Links */
+.footer .links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .links ul li {
+  margin-bottom: 10px;
+}
+
+.footer .links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer .links ul li a:hover {
+  color: #00c3a0;
+}
+
+/* Sign-Up Section */
+.sign-up {
+  padding: 30px 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.sign-up-form {
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.sign-up-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sign-up-form input,
+.sign-up-form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sign-up-form input:focus {
+  border-color: #00c3a0;
+}
+
+.sign-up-form button {
+  background-color: #00c3a0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-form button:hover {
+  background-color: #008b6e;
+}
+
+/* Gender Selection Section */
+.gender-selection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gender-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00c3a0;
+  background-color: #fff;
+  border: 2px solid #00c3a0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gender-btn.active {
+  background-color: #00c3a0;
+  color: #fff;
+}
+
+.gender-btn:hover {
+  background-color: #e8f9f4;
+  color: #00c3a0;
+}
+
+html, body { 
+  overflow-x: hidden;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styles */
+/* General Header Styles */
+header {
+  background-color: #101010
+  ; /* Black background */
+  padding: 10px 20px; /* Thin and delicate padding */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Center align header content */
+  margin: 0 auto;
+}
+
+/* Logo */
+header .logo img {
+  display: flex;
+
+  width: 200px; 
+  
+  object-fit: cover; /* Ensures no white background is visible */
+}
+
+/* Navigation Links and Buttons */
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between links */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a,
+button {
+  text-decoration: none;
+  color: #fff; /* White text */
+  background-color: #000; /* Black background */
+  padding: 5px 15px; /* Add padding for button-like appearance */
+  border-radius: 50px; /* Rounded corners */
+  font-weight: bold;
+  font-size: 14px; /* Thin and delicate text */
+  cursor: pointer;
+  border: none; /* No border */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+header ul li a:hover,
+button:hover {
+  background-color: #283231; /* Teal background on hover */
+  color: #fff; /* White text */
+}
+
+/* Share Button */
+.share-btn {
+  background-color: #fff; /* Always white */
+  color: #000; /* Black text */
+  border: none;
+}
+
+.share-btn:hover {
+  background-color: #00c3a0; /* Slight gray on hover */
+  color: #000; /* Black text */
+}
+
+/* General Button Styles */
+a.sign-up-btn, a.btn.sign-up {
+display: inline-block;
+padding: 10px 20px;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+color: #fff; /* White text */
+background-color: #00c3a0; /* Teal background */
+border-radius: 25px; /* Rounded corners */
+text-align: center;
+transition: background-color 0.3s ease;
+}
+
+a.sign-up-btn:hover, a.btn.sign-up:hover {
+background-color: #008b6e; /* Darker teal on hover */
+}
+
+
+
+
+
+
+
+/* Button Styles */
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px; /* Rounded shape */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+/* Teal Buttons */
+.sign-up-btn, 
+header ul li a {
+  background-color: #000; /* Teal background */
+  color: #fff; /* White text */
+}
+
+.sign-up-btn:hover, 
+header ul li a:hover {
+  background-color: #fff; /* Turns white on hover */
+  color: #000; /* Text turns black on hover */
+}
+
+/* Share Button */
+.share-btn {
+  background-color: #fff; /* Always white */
+  color: #000; /* Black text */
+  font-weight: bold;
+  border: 2px solid #e0e0e0; /* Optional border for "Share" button */
+}
+
+.share-btn:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+
+/* Hero Section */
+.hero {
+  flex-direction: column; /* Stack elements vertically */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  width: 100%; /* Full width */
+}
+
+.hero-image {
+  width: 100%; /* Full width */
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+}
+
+.image-change-button {
+  gap: 8px;
+}
+
+.circle-button {
+  width: 10px;
+  height: 10px;
+}
+
+
+
+/* Discover Section */
+.discover {
+text-align: center;
+padding: 50px 20px;
+background-color: #fff; /* White background */
+}
+
+.discover h2 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 30px;
+color: #000; /* Black text for heading */
+}
+
+.testimonials {
+display: flex;
+width: 100%;
+gap: 20px; /* Space between testimonials */
+animation: moveContainer 24s infinite linear; /* Infinite sliding effect */
+}
+
+.testimonials blockquote {
+flex: 0 0 33%;  /* Each testimonial takes up 33% of the container */
+font-style: italic;
+background-color: #d4f0ec; /* Light teal background */
+color: #333; /* Darker text for readability */
+padding: 20px;
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+text-align: left;
+}
+
+/* Duplicate the testimonials to create a smooth, infinite scrolling effect */
+.testimonials::after {
+  content: '';
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex: 1;
+}
+
+@keyframes moveContainer {
+  0% {
+    transform: translateX(0); /* Start at the left edge */
+  }
+  100% {
+    transform: translateX(-250%); /* Move completely to the left (twice the container's width) */
+  }
+}
+
+
+
+
+/* Features Section */
+/* Features Section: Black Background */
+.features {
+  background-color: black;
+  padding: 30px 15%; /* Adds more space to the left and right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px;
+  margin-bottom: 50px; /* Space between black and white background */
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Feature Slide Container - Layout Fix */
+.feature-slide-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+/* Phone Container */
+.phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+}
+
+/* Ensure both phone images are the same size */
+.phone-container img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Right Side - Text Container */
+.text-container {
+  flex: 1;
+  text-align: left;
+  max-width: 450px;
+  color: #00d9d9;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 200px; /* More spacing between images and text */
+  min-height: 160px; /* Keeps text area consistent between slides */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Step Indicator - Upper Right */
+.step-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Styling text for emphasis */
+.text-container p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Circle Buttons */
+.feature-change-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Updated button styling - Round Shape */
+.circle-button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: gray;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.circle-button.selected {
+  background-color: #00d9d9;
+  border: 2px solid white;
+}
+
+
+
+
+
+
+/* Key Features Section */
+.key-features {
+text-align: center;
+padding: 30px 20px;
+background-color: #fff; /* White background for contrast */
+}
+
+.key-features h3 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 20px;
+color: #000; /* Black text for the heading */
+}
+
+.features-grid {
+display: flex;
+justify-content: center;
+flex-wrap: wrap; /* Ensures responsiveness */
+gap: 20px; /* Space between bubbles */
+}
+
+.feature-bubble {
+background-color: #000; /* Black background */
+color: #00c3a0; /* Teal text */
+border: 2px solid #00c3a0; /* Teal border */
+border-radius: 15px; /* Rounded corners */
+padding: 20px;
+text-align: center;
+width: 220px; /* Fixed width for bubbles */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+transition: transform 0.3s ease; /* Hover effect */
+}
+
+.feature-bubble:hover {
+transform: scale(1.05); /* Slightly enlarge on hover */
+background-color: #00c3a0; /* Change to teal background */
+color: #fff; /* White text on hover */
+}
+
+
+/* One Marketplace Section */
+.one-marketplace {
+padding: 50px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px; /* Space between the collage and text */
+flex-wrap: wrap; /* Enable wrapping for smaller screens */
+background-color: #fff; /* White background */
+}
+
+.one-marketplace .content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap; /* Adjust layout for responsiveness */
+gap: 40px;
+max-width: 1200px; /* Limit width of the section */
+}
+
+.one-marketplace .collage img {
+max-width: 500px; /* Adjust collage size */
+width: 100%;
+height: auto;
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.one-marketplace .text {
+max-width: 500px; /* Limit the width of the text */
+text-align: center; /* Center text content */
+margin: 0 auto; /* Ensures centering */
+}
+
+.one-marketplace h2 {
+font-size: 28px;
+font-weight: bold;
+margin-bottom: 20px;
+color: #000; /* Black text for heading */
+}
+
+.one-marketplace p {
+font-size: 16px;
+line-height: 1.6;
+color: #333; /* Dark gray text for body */
+}
+
+/* Waitlist Section */
+.waitlist {
+background-color: #f5f5f5; /* Light grey background */
+text-align: center;
+padding: 40px 20px; /* Add space around the section */
+}
+
+.waitlist h2 {
+font-size: 20px;
+font-weight: bold;
+color: #000; /* Black text */
+margin-bottom: 20px;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px; /* Space between buttons */
+
+}
+
+.btn {
+font-size: 16px;
+font-weight: bold;
+padding: 10px 20px;
+border: none;
+border-radius: 25px; /* Rounded buttons */
+cursor: pointer;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sign Up Button */
+.btn.sign-up {
+background-color: #00c3a0; /* Teal background */
+color: #fff; /* White text */
+}
+
+.btn.sign-up:hover {
+background-color: #008b6e; /* Darker teal on hover */
+}
+
+/* Share Button */
+.btn.share {
+background-color: #fdeacb; /* Light beige background */
+color: #000; /* Black text */
+}
+
+.btn.share:hover {
+background-color: #f7d6a5; /* Darker beige on hover */
+}
+
+/* Note Below Buttons */
+.waitlist .note {
+font-size: 10px;
+color: #333; /* Dark grey text */
+margin-top: 20px;
+text-align: center;
+}
+
+
+
+/* buy me a coffee */
+#buy-me-a-coffee {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: white; /* White background */
+  border: 1px solid #ffffff; /* Yellow border */
+  border-radius: 8px;
+}
+
+#buy-me-a-coffee p {
+  font-weight: bold; /* Bold text */
+  font-size: 16px;
+  color: #333; /* Dark grey for better contrast */
+}
+
+
+#buy-me-a-coffee img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#buy-me-a-coffee img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* Footer Section */
+.footer {
+background-color: #000; /* Black background */
+color: #fff; /* White text */
+padding: 30px 20px;
+text-align: center;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+flex-wrap: wrap; /* Wrap for responsiveness */
+gap: 20px; /* Space between items */
+}
+
+/* Footer Logo */
+.footer .logo {
+display: flex;
+align-items: center; /* Align logo image and text vertically */
+gap: 10px; /* Space between the logo image and text */
+}
+
+.footer .logo img {
+width: 40px; /* Adjust logo size */
+height: auto;
+}
+
+.footer .logo-text {
+font-size: 20px; /* Adjust font size */
+font-weight: bold; /* Bold text */
+color: #00c3a0; /* Teal color to match the theme */
+}
+
+
+/* Footer Links */
+.footer .links {
+display: flex;
+gap: 40px; /* Space between link groups */
+}
+
+.footer .links ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footer .links ul li {
+margin-bottom: 10px;
+}
+
+.footer .links ul li a {
+color: #fff; /* White text for links */
+text-decoration: none;
+font-size: 14px;
+}
+
+.footer .links ul li a:hover {
+color: #00c3a0; /* Teal color on hover */
+}
+
+/* Social Icons */
+.footer .social-icons {
+display: flex;
+gap: 15px; /* Space between social icons */
+}
+
+.footer .social-icons img {
+width: 40px; /* Adjust icon size */
+height: 40px;
+border-radius: 50%; /* Circular icons */
+transition: transform 0.3s ease; /* Hover effect */
+}
+
+.footer .social-icons img:hover {
+transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sign-Up Section */
+.sign-up {
+padding: 30px 10px; /* Reduced padding for smaller space */
+text-align: center;
+background-color: #fff; /* White background */
+}
+
+.sign-up-form {
+max-width: 400px; /* Reduced width for smaller layout */
+width: 90%; /* Still responsive for smaller screens */
+margin: 0 auto;
+padding: 15px; /* Smaller padding inside the form */
+box-sizing: border-box;
+}
+
+.sign-up-form label {
+display: block;
+font-size: 14px; /* Slightly smaller font size */
+font-weight: bold;
+margin: 10px 0 5px;
+color: #333;
+}
+
+.sign-up-form input,
+.sign-up-form button {
+width: 100%;
+padding: 8px; /* Smaller padding for inputs */
+margin-bottom: 15px; /* Reduced spacing between fields */
+font-size: 13px; /* Smaller input text */
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+.sign-up-form input:focus {
+border-color: #00c3a0; /* Teal focus */
+}
+
+.sign-up-form .gender-options {
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.sign-up-form .gender-options label {
+margin: 0;
+font-size: 13px;
+}
+
+.sign-up-form button {
+background-color: #00c3a0; /* Teal background */
+color: #fff; /* White text */
+border: none;
+padding: 10px;
+font-size: 14px; /* Slightly smaller button text */
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+.sign-up-form button:hover {
+background-color: #008b6e; /* Darker teal on hover */
+}
+
+.submit {
+  padding-top: 20px;
+}
+
+/* Gender Selection Section */
+.gender-selection {
+display: flex;
+justify-content: center;
+gap: 10px; /* Reduced spacing between buttons */
+margin: 15px 0; /* Reduced margin */
+}
+
+.gender-btn {
+padding: 8px 15px; /* Smaller button padding */
+font-size: 14px; /* Smaller font size for gender buttons */
+font-weight: bold;
+color: #00c3a0; /* Teal color */
+background-color: #fff; /* White background */
+border: 2px solid #00c3a0; /* Teal border */
+border-radius: 20px; /* Rounded corners */
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.gender-btn.active {
+background-color: #00c3a0; /* Teal background for active state */
+color: #fff; /* White text for active state */
+}
+
+.gender-btn:hover {
+background-color: #e8f9f4; /* Light teal hover effect */
+color: #00c3a0;
+}
+
+.gender-btn:focus {
+outline: none; /* Remove default focus outline */
+}
+
+
+
+
+
+
+
+/* Keyframe for Sliding Animation */
+@keyframes slide {
+0% {
+  transform: translateX(0);
+}
+33% {
+  transform: translateX(-100%);
+}
+66% {
+  transform: translateX(-200%);
+}
+100% {
+  transform: translateX(0);
+}
+}
+
+@keyframes moveSlides {
+  0% {
+    transform: translateX(0); /* Start at the left edge */
+  }
+  100% {
+    transform: translateX(-300%); /* Move completely to the left (twice the container's width) */
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sign-up-form {
+    max-width: 100%;
+  }
+
+  .gender-selection {
+    flex-direction: column;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+.black-background {
+  flex-direction: column;
+}
+
+.images img {
+  width: 120px;
+}
+
+.text {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Header Section */
+
+.header-container {
+  display: flex;
+  flex-direction: column; /* Ensure all items are in a single row */
+  align-items: center;
+  justify-content: space-between; /* Spread elements evenly */
+  flex-wrap: wrap; /* Prevent overflow */
+  padding: 0.5rem 1rem;
+}
+
+.header-container .logo img {
+  max-width: 4rem; /* Scale down logo */
+  height: auto;
+}
+
+.header-container .buttons {
+  display: flex;
+  flex-direction: row; /* Keep buttons in a row */
+  gap: 0.5rem;
+}
+
+.header-container ul {
+  display: flex;
+  flex-direction: row; /* Ensure nav items are in a row */
+  gap: 0.2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-container ul li {
+  display: inline-block;
+}
+
+.sign-up-btn,
+.share-btn {
+  font-size: 0.8rem; /* Adjust font size */
+  padding: 0.5rem 1rem; /* Ensure consistency */
+  white-space: nowrap; /* Prevent breaking */
+}
+
+/* Ensure navigation and buttons fit well */
+.nav-links {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Center nav links */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* Hero Section */
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  order: 1; /* Move below the image */
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 90%;
+  order: 2; /* Move below the subtitle */
+}
+
+.hero-slider {
+  display: none; /* Hide hero slider on mobile if not needed */
+}
+
+
+
+
+
+.testimonials {
+  animation: moveSlides 12s infinite linear; /* Speed up the animation */
+}
+
+.testimonials blockquote {
+  flex: 0 0 25%;  /* Make each testimonial take up 25% of the container */
+  padding: 15px;  /* Reduce padding */
+}
+
+
+
+/* phone feature display */
+
+.feature-slide-container {
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items */
+  text-align: center;
+}
+
+.phone-container {
+  width: 100%; /* Allow full width */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phone-container img {
+  width: 80%; /* Make images responsive */
+  max-width: 280px; /* Prevent images from being too large */
+}
+
+.text-container {
+  max-width: 90%;
+  padding-left: 0; /* Remove left padding for small screens */
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Add spacing between images and text */
+}
+
+.step-number {
+  font-size: 20px; /* Reduce font size for smaller screens */
+  text-align: center;
+}
+
+.feature-change-button {
+  margin-top: 15px;
+  gap: 8px; /* Reduce button spacing */
+}
+
+.circle-button {
+  width: 12px;
+  height: 12px;
+}
+
+/* key features display */
+
+
+
+.features-grid {
+  flex-direction: column; /* Stack bubbles vertically */
+  align-items: center;
+}
+
+.feature-change-button {
+  height: 20px;
+  background-color: black;
+  padding-bottom: 15px;
+}
+
+.feature-bubble {
+  max-width: 240px; /* Reduce further for very small screens */
+  font-size: 12px;
+  padding: 8px;
+}
+
+
+/* one marketplace */
+
+
+.one-marketplace {
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Reduce gap between elements */
+}
+
+.one-marketplace .collage img {
+  max-width: 100%; /* Full width on smaller screens */
+}
+
+.one-marketplace .text {
+  text-align: center; /* Center-align the text */
+}
+
+.buttons {
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Reduce gap between buttons */
+}
+
+
+
+
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .links {
+  flex-direction: row;
+  gap: 20px; /* Adjust gap for vertical layout */
+}
+
+
+
+/* Sign up form adjustments for mobile */
+.sign-up-form {
+  max-width: 100%; /* Full width for mobile */
+  padding: 10px; /* Reduced padding on mobile */
+}
+
+.gender-selection {
+  flex-direction: column; /* Stack gender buttons vertically */
+  gap: 10px; /* Adjust spacing between buttons */
+}
+
+.gender-btn {
+  width: 100%; /* Full width for buttons */
+}
+}
