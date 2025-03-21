@@ -128,20 +128,3 @@ document.querySelectorAll(".gender-btn").forEach((btn) => {
       document.getElementById("gender-input").value = this.dataset.value;
     });
   });
-
-
-
-//desktop vs mobile view
-function selectView() 
-{
-  const screenWidth = window.innerWidth;
-
-  if (screenWidth < 768)
-  {
-    window.location.href = "Mobile_Website/mobile_index.html";
-  }
-  else
-  {
-    window.location.href = "Desktop_Website/desktop_index.html";
-  }
-}
