@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #101010;
+  background-color: #000;
   padding: 10px 20px;
 }
 
@@ -27,13 +27,11 @@ header {
   margin: 0 auto;
 }
 
-/* Logo Size */
 header .logo img {
   width: 200px;
   object-fit: cover;
 }
 
-/* Navigation List */
 header ul {
   list-style: none;
   display: flex;
@@ -43,39 +41,31 @@ header ul {
   padding: 0;
 }
 
-/* Button & Link Styling */
-button,
-a.sign-up-btn, 
-a.btn.sign-up, 
-.share-btn, 
-header ul li a {
-  font-size: 16px; /* Ensuring same font size */
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 20px;
-  border-radius: 25px;
+header ul li a,
+button {
   text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
   cursor: pointer;
-  display: inline-block;
+  border: none;
   transition: all 0.3s ease;
 }
 
-/* Sign-Up Button */
-a.sign-up-btn, 
-a.btn.sign-up {
-  background-color: #00c3a0;
+header ul li a:hover,
+button:hover {
+  background-color: #283231;
   color: #fff;
-}
-
-a.sign-up-btn:hover, 
-a.btn.sign-up:hover {
-  background-color: #008b6e;
 }
 
 /* Share Button */
 .share-btn {
   background-color: #fff;
   color: #000;
+  border: none;
 }
 
 .share-btn:hover {
@@ -83,115 +73,50 @@ a.btn.sign-up:hover {
   color: #000;
 }
 
-/* Navigation Links */
-header ul li a {
-  background-color: transparent;
-  color: #fff;
+/* General Button Styles */
+a.sign-up-btn, a.btn.sign-up {
+  display: inline-block;
   padding: 10px 20px;
-}
-
-header ul li a:hover {
-  background-color: #283231;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
+  background-color: #00c3a0;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
+a.sign-up-btn:hover, a.btn.sign-up:hover {
+  background-color: #008b6e;
+}
 
-
-/* Hero Section */
 /* Hero Section */
 .hero {
   display: flex;
-  flex-direction: row; /* Ensures horizontal layout */
   justify-content: space-between;
   align-items: center;
-  padding: 80px 50px;
+  padding: 50px;
   background-color: #f5f5f5;
-  min-height: 560px;
-  margin: 0 auto;
-  text-align: left;
-  gap: 50px; /* Ensures space between text and images */
 }
 
-/* Text Container */
-.hero-content {
-  flex: 1;
-  max-width: 50%;
-}
-
-/* PLAN LESS. LIVE MORE. */
-.hero-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: left;
-  display: block;
-  max-width: 100%;
-}
-
-/* Mustt (Adjective): */
-.hero-subtitle {
-  font-family: "Georgia", serif;
-  font-size: 1.8rem;
-  font-style: italic;
-  margin-top: 10px;
-}
-
-/* Being in the joyful state... */
-.hero-description {
-  font-family: "Times New Roman", serif;
-  font-size: 1.6rem;
-  font-style: italic;
-  line-height: 1.6;
-  margin-top: 5px;
-}
-
-
-/* Hero Image Slider */
 .hero-slider {
-  flex: 1;
-  max-width: 50%;
-  overflow: hidden; /* Hides overflow */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  width: 50%;
+  overflow: hidden;
 }
 
-/* Slides Container */
-.slides {
+.hero-slider .slides {
   display: flex;
-  white-space: nowrap; /* Keeps images in one line */
-  transition: transform 0.5s ease-in-out;
 }
 
-/* Individual Image Styling */
-.slides img {
+.hero-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.hero-image img {
   width: 100%;
-  height: auto;
-  border-radius: 15px;
-  flex-shrink: 0; /* Prevents resizing */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Discover Section */
 .discover {
@@ -201,15 +126,12 @@ header ul li a:hover {
 }
 
 .discover h2 {
-  margin-top: 100px;
   font-size: 24px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 100px;
 }
 
 .testimonials {
-  margin-top: 100px;
   display: flex;
   gap: 20px;
   animation: moveContainer 24s infinite linear;
@@ -233,13 +155,6 @@ header ul li a:hover {
     transform: translateX(-250%);
   }
 }
-
-/* Phone Features Section */
-
-
-
-
-
 
 /* Key Features Section */
 .key-features {
@@ -417,8 +332,7 @@ body {
 /* Header Styles */
 /* General Header Styles */
 header {
-  background-color: #101010
-  ; /* Black background */
+  background-color: #000; /* Black background */
   padding: 10px 20px; /* Thin and delicate padding */
 }
 
@@ -542,43 +456,47 @@ header ul li a:hover {
 
 /* Hero Section */
 .hero {
-  flex-direction: column; /* Stack elements vertically */
-  text-align: center;
-  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #f5f5f5;
 }
 
-.hero-content {
-  width: 100%; /* Full width */
+.hero-slider {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-slider .slides {
+  display: flex;
+}
+
+.hero-slider img {
+  width: 100%;
 }
 
 .hero-image {
-  width: 100%; /* Full width */
-  margin-bottom: 20px;
+  display: flex;
+  width: 70%;
+  overflow: hidden;
+  position: relative;
 }
 
-.hero-title {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.hero-subtitle {
-  font-size: 1.4rem;
-}
-
-.hero-description {
-  font-size: 1.1rem;
+.hero-image img {
+  width: 100%;
 }
 
 .image-change-button {
-  gap: 8px;
+  width: 50%;
+  padding-left: 50%;
+  background-color: #f5f5f5;
+  padding-bottom: 10px;
 }
-
-.circle-button {
-  width: 10px;
-  height: 10px;
-}
-
-
 
 /* Discover Section */
 .discover {
@@ -631,108 +549,143 @@ text-align: left;
 }
 
 
-
-
 /* Features Section */
-/* Features Section: Black Background */
-.features {
-  background-color: black;
-  padding: 30px 15%; /* Adds more space to the left and right */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-radius: 40px;
-  margin-bottom: 50px; /* Space between black and white background */
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-/* Feature Slide Container - Layout Fix */
-.feature-slide-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  padding: 40px;
-}
-
-/* Phone Container */
-.phone-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 50%;
-}
-
-/* Ensure both phone images are the same size */
-.phone-container img {
-  width: 250px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 15px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-/* Right Side - Text Container */
-.text-container {
-  flex: 1;
-  text-align: left;
-  max-width: 450px;
-  color: #00d9d9;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 200px; /* More spacing between images and text */
-  min-height: 160px; /* Keeps text area consistent between slides */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Step Indicator - Upper Right */
-.step-number {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 15px;
-}
-
-/* Styling text for emphasis */
-.text-container p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-/* Circle Buttons */
 .feature-change-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 10px;
+height: 50px;
+background-color: black;
+padding: 0 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Updated button styling - Round Shape */
 .circle-button {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: gray;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: background-color 0.3s ease, border 0.3s ease;
+padding: 0 20px;
+width: 40px;
+height: 40px;
+background-color: tan;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+transition: transform 0.2s ease;
+}
+
+.circle-button:hover {
+transform: scale(1.1);
+}
+
+.circle-button:active {
+transform: scale(0.95);
 }
 
 .circle-button.selected {
-  background-color: #00d9d9;
-  border: 2px solid white;
+background-color: teal; /* Selected color */
+}
+
+.circle-button2 {
+  padding: 0 20px;
+  width: 40px;
+  height: 40px;
+  background-color: tan;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  }
+  
+  .circle-button2:hover {
+  transform: scale(1.1);
+  }
+  
+  .circle-button2:active {
+  transform: scale(0.95);
+  }
+  
+  .circle-button2.selected {
+  background-color: teal; /* Selected color */
+  }
+
+.features {
+text-align: center;
+padding: 50px 20px;
+}
+
+.features h2 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.feature-slide {
+width: 100%;
+overflow: hidden;
+position: relative;
+display: flex;
+}
+
+.feature-slide img {
+width: 100%;
+}
+
+/* Mobile Slider */
+.mobile-slider {
+position: relative;
+overflow: hidden;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.slides {
+display: flex;
+}
+
+.slide {
+min-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.black-background {
+background-color: #000; /* Black background */
+color: #fff; /* Default white text */
+padding: 50px 40px; /* Increase padding to make it larger */
+border-radius: 10px; /* Rounded corners */
+display: flex;
+flex-direction: row; /* Keep images and text side by side */
+align-items: center; /* Align content vertically */
+justify-content: space-between; /* Space out images and text */
+gap: 40px; /* Increase gap between elements */
+min-height: 400px; /* Ensure a minimum height */
+width: 100%; /* Expand to full container width */
 }
 
 
+.images img {
+width: 150px;
+height: auto;
+border-radius: 10px;
+}
 
+/* Text Styling Inside Black Background */
+.text {
+text-align: left;
+max-width: 400px;
+}
 
+.slide-description {
+font-size: 18px;
+font-weight: bold;
+color: #fff; /* White font */
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.slide-text {
+font-size: 14px;
+color: #00c3a0; /* Teal font */
+line-height: 1.6;
+font-weight: bold;
+}
 
 
 /* Key Features Section */
@@ -768,6 +721,10 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 transition: transform 0.3s ease; /* Hover effect */
 }
 
+.feature-bubble p {
+  font-weight: bold;
+}
+
 .feature-bubble:hover {
 transform: scale(1.05); /* Slightly enlarge on hover */
 background-color: #00c3a0; /* Change to teal background */
@@ -796,7 +753,7 @@ max-width: 1200px; /* Limit width of the section */
 }
 
 .one-marketplace .collage img {
-max-width: 500px; /* Adjust collage size */
+max-width: 800px; /* Adjust collage size */
 width: 100%;
 height: auto;
 border-radius: 10px; /* Rounded corners */
@@ -804,13 +761,11 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .one-marketplace .text {
-max-width: 500px; /* Limit the width of the text */
-text-align: center; /* Center text content */
-margin: 0 auto; /* Ensures centering */
+max-width: 300px; /* Limit the width of the text */
 }
 
 .one-marketplace h2 {
-font-size: 28px;
+font-size: 48px;
 font-weight: bold;
 margin-bottom: 20px;
 color: #000; /* Black text for heading */
@@ -820,6 +775,7 @@ color: #000; /* Black text for heading */
 font-size: 16px;
 line-height: 1.6;
 color: #333; /* Dark gray text for body */
+font-weight: bold;
 }
 
 /* Waitlist Section */
@@ -836,12 +792,23 @@ color: #000; /* Black text */
 margin-bottom: 20px;
 }
 
+.buy-me-a-coffee {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Adjust layout for responsiveness */
+  max-width: 1200px; /* Limit width of the section */
+}
+
+.buy-me-a-coffee img {
+  scale: 80%;
+  padding-left: 40px;
+}
+
 .buttons {
 display: flex;
 justify-content: center;
 align-items: center;
 gap: 20px; /* Space between buttons */
-
 }
 
 .btn {
@@ -876,40 +843,10 @@ background-color: #f7d6a5; /* Darker beige on hover */
 
 /* Note Below Buttons */
 .waitlist .note {
-font-size: 10px;
+font-size: 14px;
 color: #333; /* Dark grey text */
 margin-top: 20px;
-text-align: center;
 }
-
-
-
-/* buy me a coffee */
-#buy-me-a-coffee {
-  text-align: center;
-  margin: 40px 0;
-  padding: 20px;
-  background-color: white; /* White background */
-  border: 1px solid #ffffff; /* Yellow border */
-  border-radius: 8px;
-}
-
-#buy-me-a-coffee p {
-  font-weight: bold; /* Bold text */
-  font-size: 16px;
-  color: #333; /* Dark grey for better contrast */
-}
-
-
-#buy-me-a-coffee img {
-  transition: transform 0.3s ease-in-out;
-}
-
-#buy-me-a-coffee img:hover {
-  transform: scale(1.1);
-}
-
-
 
 
 
@@ -1105,6 +1042,16 @@ color: #00c3a0;
 outline: none; /* Remove default focus outline */
 }
 
+.hero h1 {
+  font-size: 56px;
+  width: 70%;
+}
+
+.hero p {
+  font-size: 24px;
+  font-style: italic;
+  width: 85%;
+}
 
 
 
@@ -1134,266 +1081,4 @@ outline: none; /* Remove default focus outline */
   100% {
     transform: translateX(-300%); /* Move completely to the left (twice the container's width) */
   }
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .features-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer .links {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .sign-up-form {
-    max-width: 100%;
-  }
-
-  .gender-selection {
-    flex-direction: column;
-  }
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-.black-background {
-  flex-direction: column;
-}
-
-.images img {
-  width: 120px;
-}
-
-.text {
-  max-width: 100%;
-  text-align: center;
-}
-
-/* Header Section */
-
-.header-container {
-  display: flex;
-  flex-direction: column; /* Ensure all items are in a single row */
-  align-items: center;
-  justify-content: space-between; /* Spread elements evenly */
-  flex-wrap: wrap; /* Prevent overflow */
-  padding: 0.5rem 1rem;
-}
-
-.header-container .logo img {
-  max-width: 4rem; /* Scale down logo */
-  height: auto;
-}
-
-.header-container .buttons {
-  display: flex;
-  flex-direction: row; /* Keep buttons in a row */
-  gap: 0.5rem;
-}
-
-.header-container ul {
-  display: flex;
-  flex-direction: row; /* Ensure nav items are in a row */
-  gap: 0.2rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.header-container ul li {
-  display: inline-block;
-}
-
-.sign-up-btn,
-.share-btn {
-  font-size: 0.8rem; /* Adjust font size */
-  padding: 0.5rem 1rem; /* Ensure consistency */
-  white-space: nowrap; /* Prevent breaking */
-}
-
-/* Ensure navigation and buttons fit well */
-.nav-links {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center; /* Center nav links */
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-
-
-
-
-
-
-
-/* Hero Section */
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 10px;
-  order: 1; /* Move below the image */
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 1.5;
-  max-width: 90%;
-  order: 2; /* Move below the subtitle */
-}
-
-.hero-slider {
-  display: none; /* Hide hero slider on mobile if not needed */
-}
-
-
-
-
-
-.testimonials {
-  animation: moveSlides 12s infinite linear; /* Speed up the animation */
-}
-
-.testimonials blockquote {
-  flex: 0 0 25%;  /* Make each testimonial take up 25% of the container */
-  padding: 15px;  /* Reduce padding */
-}
-
-
-
-/* phone feature display */
-
-.feature-slide-container {
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center items */
-  text-align: center;
-}
-
-.phone-container {
-  width: 100%; /* Allow full width */
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.phone-container img {
-  width: 80%; /* Make images responsive */
-  max-width: 280px; /* Prevent images from being too large */
-}
-
-.text-container {
-  max-width: 90%;
-  padding-left: 0; /* Remove left padding for small screens */
-  text-align: center; /* Center text */
-  margin-top: 20px; /* Add spacing between images and text */
-}
-
-.step-number {
-  font-size: 20px; /* Reduce font size for smaller screens */
-  text-align: center;
-}
-
-.feature-change-button {
-  margin-top: 15px;
-  gap: 8px; /* Reduce button spacing */
-}
-
-.circle-button {
-  width: 12px;
-  height: 12px;
-}
-
-/* key features display */
-
-
-
-.features-grid {
-  flex-direction: column; /* Stack bubbles vertically */
-  align-items: center;
-}
-
-.feature-change-button {
-  height: 20px;
-  background-color: black;
-  padding-bottom: 15px;
-}
-
-.feature-bubble {
-  max-width: 240px; /* Reduce further for very small screens */
-  font-size: 12px;
-  padding: 8px;
-}
-
-
-/* one marketplace */
-
-
-.one-marketplace {
-  flex-direction: column; /* Stack elements vertically */
-  gap: 20px; /* Reduce gap between elements */
-}
-
-.one-marketplace .collage img {
-  max-width: 100%; /* Full width on smaller screens */
-}
-
-.one-marketplace .text {
-  text-align: center; /* Center-align the text */
-}
-
-.buttons {
-  flex-direction: column; /* Stack buttons vertically */
-  gap: 10px; /* Reduce gap between buttons */
-}
-
-
-
-
-.footer-content {
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer .links {
-  flex-direction: row;
-  gap: 20px; /* Adjust gap for vertical layout */
-}
-
-
-
-/* Sign up form adjustments for mobile */
-.sign-up-form {
-  max-width: 100%; /* Full width for mobile */
-  padding: 10px; /* Reduced padding on mobile */
-}
-
-.gender-selection {
-  flex-direction: column; /* Stack gender buttons vertically */
-  gap: 10px; /* Adjust spacing between buttons */
-}
-
-.gender-btn {
-  width: 100%; /* Full width for buttons */
-}
 }
