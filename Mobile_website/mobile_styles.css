@@ -1208,12 +1208,13 @@ outline: none; /* Remove default focus outline */
 }
 
 .mission-collage-text{
-  width: 60%;
-  padding-right: 40px;
+  width: 90%;
+  padding-left: 5%;
 }
 
 .mission-collage-image {
-  width: 40%;
+  width: 70%;
+  padding-left: 15%;
 }
 
 .mission-collage-text h3 {
