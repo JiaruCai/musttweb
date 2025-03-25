@@ -914,9 +914,7 @@ gap: 20px; /* Space between items */
 
 /* Footer Logo */
 .footer .logo {
-display: flex;
 align-items: center; /* Align logo image and text vertically */
-gap: 10px; /* Space between the logo image and text */
 }
 
 .footer .logo img {
@@ -961,6 +959,7 @@ color: #00c3a0; /* Teal color on hover */
 .footer .social-icons {
 display: flex;
 gap: 15px; /* Space between social icons */
+align-items: center;
 }
 
 .footer .social-icons img {
