@@ -292,7 +292,6 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 }
 
 .sign-up-form {
-  max-width: 400px;
   width: 90%;
   margin: 0 auto;
   padding: 15px;
@@ -354,7 +353,7 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
 }
 
 .gender-btn.active {
-  background-color: #00c3a0;
+  background-color: black;
   color: #fff;
 }
 
@@ -994,7 +993,6 @@ background-color: #fff; /* White background */
 }
 
 .sign-up-form {
-max-width: 400px; /* Reduced width for smaller layout */
 width: 90%; /* Still responsive for smaller screens */
 margin: 0 auto;
 padding: 15px; /* Smaller padding inside the form */
@@ -1050,6 +1048,13 @@ transition: background-color 0.3s ease;
 background-color: #008b6e; /* Darker teal on hover */
 }
 
+.sign-up-form-width {
+  max-width: 400px;
+  align-items: center;
+  text-align: center;
+  padding-left: 33%;
+}
+
 .submit {
   padding-top: 20px;
 }
@@ -1075,7 +1080,7 @@ transition: all 0.3s ease;
 }
 
 .gender-btn.active {
-background-color: #00c3a0; /* Teal background for active state */
+background-color: black; /* Teal background for active state */
 color: #fff; /* White text for active state */
 }
 
@@ -1108,7 +1113,54 @@ outline: none; /* Remove default focus outline */
   font-weight: bold;
 }
 
+.title {
+  align-items: center;
+}
 
+.title h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.contact {
+  display: inline;
+}
+
+.contact input {
+  width: 800px;
+  border-color: #00c3a0;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact textarea {
+  width: 800px;
+  border-color: #00c3a0;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact select {
+  width: 800px;
+  border-color: #00c3a0;
+  align-items: center;
+  padding: 20px;
+  appearance: none;
+  margin-bottom: 20px;
+}
+
+.contact-submit {
+  width: 400px;
+  padding-left: 33%;
+  padding-top: 20px;
+}
 
 
 

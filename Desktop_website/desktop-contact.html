@@ -51,7 +51,83 @@
     </nav>
   </header>
 
+  <div class="title">
+    <h1>GET IN TOUCH WITH US</h1>
+    <h2>& BE A PART OF SOMETHING EXCITING</h2>
+    <h2>WE LOOK FORWARD TO HEARING FROM YOU</h2>
+  </div>
 
+  <section id="sign-up" class="sign-up">
+    <form
+      id="contact-form" 
+      method="POST" 
+      onsubmit="redirectToHome(event)" 
+      class="sign-up-form"
+    >
+      <div class="contact">
+        <input id="first-name" name="First Name" type="text" placeholder="First Name" required>
+
+        <input id="surname" name="Surname" type="text" placeholder="Last Name" required>
+
+        <input id="email" name="Email Address" type="email" placeholder="Email Address" required>
+
+        <input id="company-name" name="Company Name" type="text" placeholder="Company Name">
+
+        <select name="user-type" id="user-type" required>
+          <option value="Select one of the following">Select one of the following.</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Investor">Investor</option>
+          <option value="Merchant">Merchant</option>
+        </select>
+
+        <textarea placeholder="Write your message here." id="message" name="Message" rows="5" cols="40" required></textarea>
+      </div>
+      
+      <div class="contact-submit">
+      <button type="submit">Submit</button>
+      </div>
+
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const formData = {
+        firstName: document.getElementById("first-name").value,
+        lastName: document.getElementById("surname").value,
+        companyName: document.getElementById("company-name").value,
+        email: document.getElementById("email").value,
+        userType: document.getElementById("user-type").value,
+        message: document.getElementById("message").value
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbz_0HW-tIkuO4wd0Qw2v4KP4LU9PQ2O8VZ9QEs8pNxtaTui-cgq_AbivoMqNHfBXr0V/exec", {
+        method: "POST",
+        body: JSON.stringify(formData)
+      })
+        .then(response => response.text())
+        .then(data => {
+          alert(data); // Show a success message
+          document.getElementById("dataForm").reset(); // Reset the form
+        })
+        .catch(error => console.error("Error:", error));
+    });
+  </script>
+
+  <script src="../script.js"></script> <!-- Link to your JavaScript file -->
+  
+  <script>
+    // Function to redirect after form submission
+    function redirectToHome(event) {
+      // Let the form submit normally
+      setTimeout(() => {
+        // Redirect to the desired page
+        window.location.href = 'desktop_index.html';
+      }, 100); // Slight delay to allow form submission
+    }
+  </script>
   
   <!-- Footer -->
   <footer class="footer">
