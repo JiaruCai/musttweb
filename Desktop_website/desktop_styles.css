@@ -1223,35 +1223,32 @@ outline: none; /* Remove default focus outline */
   padding-left: 10%;
 }
 
-.collage {
+.mission-collage {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
 }
 
-.collage-text{
+.mission-collage-text{
   width: 60%;
-}
-
-.collage-image {
-  width: 40%;
-}
-
-.collage-text {
   padding-right: 40px;
 }
 
-.collage-text h3 {
+.mission-collage-image {
+  width: 40%;
+}
+
+.mission-collage-text h3 {
   font-size: 36px;
 }
 
-.italicize {
+.mission-italicize {
   font-weight: lighter;
   font-style: italic;
 }
 
-.collage-image img {
+.mission-collage-image img {
   width: 100%;
   height: auto;
 }
