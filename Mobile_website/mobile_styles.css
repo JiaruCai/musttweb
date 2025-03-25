@@ -904,12 +904,11 @@ text-align: center;
 }
 
 .footer-content {
-display: flex;
+display: inline;
 justify-content: space-between;
 align-items: center;
 max-width: 1200px;
 margin: 0 auto;
-flex-wrap: wrap; /* Wrap for responsiveness */
 gap: 20px; /* Space between items */
 }
 
