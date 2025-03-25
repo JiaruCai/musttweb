@@ -1162,6 +1162,31 @@ outline: none; /* Remove default focus outline */
   padding-top: 20px;
 }
 
+.MeetTeamHeader h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.IndivPerson {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Person-Details, .Person {
+  width: 50%;
+}
+
+.Person-Details {
+  padding-right: 40px;
+
+}
+
+.Person img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 
