@@ -1084,21 +1084,21 @@ outline: none; /* Remove default focus outline */
 }
 
 .contact input {
-  width: 800px;
+  width: 80%;
   border-color: #00c3a0;
   align-items: center;
   padding: 20px;
 }
 
 .contact textarea {
-  width: 800px;
+  width: 80%;
   border-color: #00c3a0;
   align-items: center;
   padding: 20px;
 }
 
 .contact select {
-  width: 800px;
+  width: 80%;
   border-color: #00c3a0;
   align-items: center;
   padding: 20px;
@@ -1107,7 +1107,7 @@ outline: none; /* Remove default focus outline */
 }
 
 .contact-submit {
-  width: 400px;
+  width: 60%;
   padding-left: 33%;
   padding-top: 20px;
 }
