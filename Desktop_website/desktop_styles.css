@@ -1256,6 +1256,11 @@ outline: none; /* Remove default focus outline */
   height: auto;
 }
 
+.blog-title {
+  font-size: 60px;
+  text-align: center;
+}
+
 
 
 
