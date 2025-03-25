@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mustt - Plan Less. Live More.</title>
+
+  <!-- Favicon Links -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../favicon_io/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="../favicon_io/android-chrome-512x512.png">
+  <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+
+  <link rel="stylesheet" href="./desktop_styles.css">
+  <script src="../script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="header-container">
+        <div class="logo">
+          <a href="desktop_index.html"> <!-- Wrap the logo image in an anchor tag -->
+            <img src="../Mustt - Logo.jpg" alt="Mustt Logo">
+          </a>
+        </div>
+        <div class="buttons">
+            <a href="desktop_signup.html" class="sign-up-btn">Sign Up</a>
+          </div>
+        <ul>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">About</button>
+              <div class="dropdown-content">
+                <a href="./desktop-mission.html">Our Mission</a>
+                <a href="./desktop-meet-the-team.html">Meet the Team</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="./desktop-blog.html">Blog</a></li>
+          <li><a href="./desktop-contact.html">For Partners</a></li>
+        </ul>
+        <div class="buttons">
+          <button class="share-btn">Share</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="title">
+    <h1>GET IN TOUCH WITH US</h1>
+    <h2>& BE A PART OF SOMETHING EXCITING</h2>
+    <h2>WE LOOK FORWARD TO HEARING FROM YOU</h2>
+  </div>
+
+  <section id="sign-up" class="sign-up">
+    <form
+      id="contact-form" 
+      method="POST" 
+      onsubmit="redirectToHome(event)" 
+      class="sign-up-form"
+    >
+      <div class="contact">
+        <input id="first-name" name="First Name" type="text" placeholder="First Name" required>
+
+        <input id="surname" name="Surname" type="text" placeholder="Last Name" required>
+
+        <input id="email" name="Email Address" type="email" placeholder="Email Address" required>
+
+        <input id="company-name" name="Company Name" type="text" placeholder="Company Name">
+
+        <select name="user-type" id="user-type" required>
+          <option value="Select one of the following">Select one of the following.</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Investor">Investor</option>
+          <option value="Merchant">Merchant</option>
+        </select>
+
+        <textarea placeholder="Write your message here." id="message" name="Message" rows="5" cols="40" required></textarea>
+      </div>
+      
+      <div class="contact-submit">
+      <button type="submit">Submit</button>
+      </div>
+
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const formData = {
+        firstName: document.getElementById("first-name").value,
+        lastName: document.getElementById("surname").value,
+        companyName: document.getElementById("company-name").value,
+        email: document.getElementById("email").value,
+        userType: document.getElementById("user-type").value,
+        message: document.getElementById("message").value
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbz_0HW-tIkuO4wd0Qw2v4KP4LU9PQ2O8VZ9QEs8pNxtaTui-cgq_AbivoMqNHfBXr0V/exec", {
+        method: "POST",
+        body: JSON.stringify(formData)
+      })
+        .then(response => response.text())
+        .then(data => {
+          alert(data); // Show a success message
+          document.getElementById("dataForm").reset(); // Reset the form
+        })
+        .catch(error => console.error("Error:", error));
+    });
+  </script>
+
+  <script src="../script.js"></script> <!-- Link to your JavaScript file -->
+  
+  <script>
+    // Function to redirect after form submission
+    function redirectToHome(event) {
+      // Let the form submit normally
+      setTimeout(() => {
+        // Redirect to the desired page
+        window.location.href = 'desktop_index.html';
+      }, 100); // Slight delay to allow form submission
+    }
+  </script>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="logo">
+        <img src="../Pics/Icons and Logos/Mustt Logo.png" alt="Mustt Logo">
+        <span class="logo-text">Mustt</span>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="./desktop-mission.html">Our Mission</a></li>
+          <li><a href="./desktop-meet-the-team.html">The Team</a></li>
+          <li><a href="./desktop-privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+        <ul>
+          <li><a href="./desktop-contact.html">For Partners</a></li>
+          <li><a href="./desktop-blog.html">Blog</a></li>
+          <li><a href="./desktop_signup.html">Sign-up</a></li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/musttmarketplace?igsh=MXkwemJlOHViMndhaw%3D%3D&utm_source=qr" target="_blank">
+          <img src="../Pics/Icons and Logos/Instagram Logo.png" alt="Instagram Logo">
+        </a>
+        <a href="https://www.tiktok.com/@musttmarketplace?_t=ZG-8stH2LEDmEb&_r=1" target="_blank">
+          <img src="../Pics/Icons and Logos/TikTok Logo.png" alt="TikTok Logo">
+        </a>
+        <a href="https://youtube.com/@musttmarketplace?si=uW_hfOYZkxwKvEqd" target="_blank">
+          <img src="../Pics/Icons and Logos/Youtube Logo.png" alt="YouTube Logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
