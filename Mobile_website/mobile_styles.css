@@ -393,7 +393,7 @@ header {
 header .logo img {
   display: flex;
 
-  width: 200px; 
+  width: 120px; 
   
   object-fit: cover; /* Ensures no white background is visible */
 }
