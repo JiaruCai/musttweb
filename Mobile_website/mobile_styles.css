@@ -1117,23 +1117,29 @@ outline: none; /* Remove default focus outline */
 }
 
 .IndivPerson {
-  display: flex;
+  display: inline;
   justify-content: center;
   align-items: center;
 }
 
-.Person-Details, .Person {
-  width: 50%;
+.Person-Details {
+  padding-bottom: 50px;
 }
 
-.Person-Details {
+.Person-Title {
   padding-right: 40px;
+}
 
+.Person-Details, .PersonTitle  {
+  width: 90%;
+  padding-left: 15px;
 }
 
 .Person img {
-  width: 100%;
+  width: 50%;
   height: auto;
+  align-items: center;
+  padding-left: 25%;
 }
 
 .Mission-title h1 {
