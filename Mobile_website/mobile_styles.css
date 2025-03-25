@@ -937,7 +937,6 @@ transform: scale(1.1); /* Slight zoom on hover */
 
 /* Sign-Up Section */
 .sign-up {
-padding: 30px 10px; /* Reduced padding for smaller space */
 text-align: center;
 background-color: #fff; /* White background */
 }
@@ -999,10 +998,10 @@ background-color: #008b6e; /* Darker teal on hover */
 }
 
 .sign-up-form-width {
-  max-width: 400px;
+  width: 80%;
   align-items: center;
   text-align: center;
-  padding-left: 33%;
+  padding-left: 10%;
 }
 
 .submit {
