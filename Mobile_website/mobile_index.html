@@ -40,62 +40,12 @@
   
 
   <!-- Hero Section -->
-  <script> 
-    function changeImageTo1()
-    {
-      var img = document.getElementById("image");
-      img.src = "../Pics/Plan Less. Live More/Image 1.png";
-      return false;
-    }
-    function changeImageTo2()
-    {
-      var img = document.getElementById("image");
-      img.src = "../Pics/Plan Less. Live More/Image 2.png";
-      return false;
-    }
-    function changeImageTo3()
-    {
-      var img = document.getElementById("image");
-      img.src = "../Pics/Plan Less. Live More/Image 3.png";
-      return false;
-    }
-    function changeImageTo4()
-    {
-      var img = document.getElementById("image");
-      img.src = "../Pics/Plan Less. Live More/Image 4.png";
-      return false;
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".circle-button");
-
-      buttons.forEach(button => {
-          button.addEventListener("click", () => {
-              // Remove "selected" class from all buttons
-              buttons.forEach(btn => btn.classList.remove("selected"));
-              // Add "selected" class to the clicked button
-              button.classList.add("selected");
-          });
-      });
-    });
-  </script>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>PLAN LESS. LIVE MORE.</h1>
-      <p><strong>Mustt (Adjective):</strong> Being in the joyful state of flow and bliss, when everything lines up.</p>
-    </div>
-    <div class="hero-image">
-      <img id="image" src="../Pics/Plan Less. Live More/Image 1.png" alt="Image 1">
-    </div>
-  </section>
-  <div class="image-change-button">
-    <button class="circle-button selected" onclick="changeImageTo1();"></button>
-    <button class="circle-button" onclick="changeImageTo2();"></button>
-    <button class="circle-button" onclick="changeImageTo3();"></button>
-    <button class="circle-button" onclick="changeImageTo4();"></button>
+  <h1 class="new-hero-text">PLAN LESS. LIVE MORE.</h1>
+  <img class="hero-new-image" id="image" src="../Pics/Plan Less. Live More/Image 1.png" alt="Image 1">
+  <div class="hero-description-new">
+    <p><strong>Mustt (Adjective):</strong></p>
+    <p>Being in the joyful state of flow and bliss, when everything lines up.</p>  
   </div>
-
 
 
    <!-- Testimonial Section -->
@@ -188,11 +138,13 @@
  <!-- One Marketplace -->
   <section class="one-marketplace">
     <div class="content">
+      <div class="text">
+        <h2>One marketplace.</h2>
+      </div>
       <div class="collage">
         <img src="../Pics/One Marketplace/Image 1.png" alt="One Marketplace Collage">
       </div>
       <div class="text">
-        <h2>One marketplace.</h2>
         <p>
           Whether organising date plans, a party night with friends, or looking for a hobby to pick up, 
           Mustt captures all the exciting and interesting events happening in one convenient place.
@@ -211,19 +163,20 @@
     <p class="note">*By sharing the platform with your friends, your position in the waitlist will go up</p>
   </section>
 
-  <!-- Buy Me a Coffee Section -->
-  <div class="buy-me-a-coffee">
-    <a href="https://www.buymeacoffee.com/Musttmarketplace" target="_blank">
-        <img src="../Pics/BuyMeACoffee.png">
-    </a>
-    <p><strong>If you would like to support us, please donate by clicking the Buy Me A Coffee logo</strong></p>
-  </div>
+  <div class="bottomOfPage">  
+    <!-- Buy Me a Coffee Section -->
+    <section class="buy-me-a-coffee">
+      <a class="buy-me-a-coffee-image" href="https://www.buymeacoffee.com/Musttmarketplace" target="_blank">
+          <img src="../Pics/BuyMeACoffee.png">
+      </a>
+      <p class="buy-me-a-coffee-text"><strong>If you would like to support us, please donate by clicking the Buy Me A Coffee logo</strong></p>
+    </div>
 
 
-  
 
-  <!-- Footer -->
-  <footer class="footer">
+
+    <!-- Footer -->
+    <footer class="footer">
       <div class="social-icons">
         <a href="https://www.instagram.com/musttmarketplace?igsh=MXkwemJlOHViMndhaw%3D%3D&utm_source=qr" target="_blank">
           <img src="../Pics/Icons and Logos/Instagram Logo.png" alt="Instagram Logo">
@@ -252,7 +205,9 @@
           <li><a href="./mobile_signup.html">Sign-up</a></li>
         </ul>
       </div>
-  </footer>
+    </footer>
+  </div>
+  
   
 
 

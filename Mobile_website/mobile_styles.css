@@ -456,6 +456,20 @@ header ul li a:hover {
 
 
 /* Hero Section */
+.hero-new-image {
+  width: 60%;
+  padding-left: 20%;
+}
+
+.new-hero-text {
+  text-align: center;
+}
+
+.hero-description-new {
+  font-style: italic;
+  padding-left: 10px;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -750,11 +764,11 @@ align-items: center;
 justify-content: space-between;
 flex-wrap: wrap; /* Adjust layout for responsiveness */
 gap: 40px;
-max-width: 1200px; /* Limit width of the section */
+max-width: 768px; /* Limit width of the section */
 }
 
 .one-marketplace .collage img {
-max-width: 800px; /* Adjust collage size */
+max-width: 100%; /* Adjust collage size */
 width: 100%;
 height: auto;
 border-radius: 10px; /* Rounded corners */
@@ -762,7 +776,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .one-marketplace .text {
-max-width: 300px; /* Limit the width of the text */
+max-width: 100%; /* Limit the width of the text */
 }
 
 .one-marketplace h2 {
@@ -796,13 +810,19 @@ margin-bottom: 20px;
 .buy-me-a-coffee {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Adjust layout for responsiveness */
-  max-width: 1200px; /* Limit width of the section */
+  gap: 20px; /* Adjust spacing between the image and text */
+  padding: 20px;
 }
 
-.buy-me-a-coffee img {
-  scale: 80%;
-  padding-left: 40px;
+.buy-me-a-coffee-image img {
+  max-width: 100px; /* Adjust size of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.buy-me-a-coffee-text {
+  font-size: 18px; /* Adjust text size */
+  color: #333; /* Adjust text color */
+  margin: 0; /* Remove any default margin */
 }
 
 .buttons {
@@ -849,7 +869,9 @@ color: #333; /* Dark grey text */
 margin-top: 20px;
 }
 
-
+.bottomOfPage {
+  display: inline;
+}
 
 /* Footer Section */
 .footer {
