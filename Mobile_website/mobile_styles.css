@@ -851,6 +851,83 @@ margin-top: 20px;
 
 
 
+/* Footer Section */
+.footer {
+background-color: #000; /* Black background */
+color: #fff; /* White text */
+padding: 30px 20px;
+text-align: center;
+align-items: center;
+}
+
+.footer .logo img {
+width: 40px; /* Adjust logo size */
+height: auto;
+align-items: center;
+}
+
+.footer .logo-text {
+font-size: 20px; /* Adjust font size */
+font-weight: bold; /* Bold text */
+color: #00c3a0; /* Teal color to match the theme */
+}
+
+
+/* Footer Links */
+.footer .links {
+display: flex;
+gap: 40px; /* Space between link groups */
+}
+
+.footer .links ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footer .links ul li {
+margin-bottom: 10px;
+}
+
+.footer .links ul li a {
+color: #fff; /* White text for links */
+text-decoration: none;
+font-size: 14px;
+}
+
+.footer .links ul li a:hover {
+color: #00c3a0; /* Teal color on hover */
+}
+
+/* Social Icons */
+.footer .social-icons {
+display: inline;
+gap: 20px; /* Space between social icons */
+align-items: center;
+padding-left: 20%;
+}
+
+.footer .social-icons img {
+width: 40px; /* Adjust icon size */
+height: 40px;
+border-radius: 50%; /* Circular icons */
+transition: transform 0.3s ease; /* Hover effect */
+}
+
+.footer .social-icons img:hover {
+transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Sign-Up Section */
 .sign-up {
 padding: 30px 10px; /* Reduced padding for smaller space */
