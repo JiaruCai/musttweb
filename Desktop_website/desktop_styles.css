@@ -756,7 +756,6 @@ justify-content: center;
 align-items: center;
 gap: 40px; /* Space between the collage and text */
 flex-wrap: wrap; /* Enable wrapping for smaller screens */
-background-color: #fff; /* White background */
 }
 
 .one-marketplace .content {
@@ -772,7 +771,6 @@ max-width: 950px; /* Adjust collage size */
 width: 100%;
 height: auto;
 border-radius: 10px; /* Rounded corners */
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .one-marketplace .text {
