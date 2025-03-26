@@ -202,44 +202,6 @@ a.sign-up-btn:hover, a.btn.sign-up:hover {
   }
 }
 
-/* Key Features Section */
-.key-features {
-  text-align: center;
-  padding: 30px 20px;
-  background-color: #fff;
-}
-
-.key-features h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-}
-
-.features-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.feature-bubble {
-  background-color: #000;
-  color: #00c3a0;
-  border: 2px solid #00c3a0;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  width: 220px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.feature-bubble:hover {
-  transform: scale(1.05);
-  background-color: #00c3a0;
-  color: #fff;
-}
-
 /* Footer Section */
 .footer {
   background-color: #000;
@@ -448,7 +410,7 @@ text-decoration: none;
 font-size: 16px;
 font-weight: bold;
 color: #fff; /* White text */
-background-color: #00c3a0; /* Teal background */
+background-color: rgb(17, 229, 222); /* Teal background */
 border-radius: 25px; /* Rounded corners */
 text-align: center;
 transition: background-color 0.3s ease;
@@ -596,10 +558,12 @@ text-align: left;
 
 /* Features Section */
 .feature-change-button {
+width: 1340px;
 height: 50px;
+margin-left: 30px;
 background-color: black;
-padding: 0 20px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+border-radius: 0px 0px 25px 25px;
 }
 
 .circle-button {
@@ -668,7 +632,9 @@ display: flex;
 }
 
 .feature-slide img {
-width: 100%;
+width: 1340px;
+margin-left: 30px;
+border-radius: 25px 25px 0px 0px;
 }
 
 /* Mobile Slider */
@@ -734,16 +700,19 @@ font-weight: bold;
 
 
 /* Key Features Section */
+.features-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
 .key-features {
 text-align: center;
-padding: 30px 20px;
 background-color: #fff; /* White background for contrast */
 }
 
 .key-features h3 {
 font-size: 20px;
 font-weight: bold;
-margin-bottom: 20px;
 color: #000; /* Black text for the heading */
 }
 
@@ -751,19 +720,21 @@ color: #000; /* Black text for the heading */
 display: flex;
 justify-content: center;
 flex-wrap: wrap; /* Ensures responsiveness */
-gap: 20px; /* Space between bubbles */
+gap: 68px; /* Space between bubbles */
 }
 
 .feature-bubble {
 background-color: #000; /* Black background */
 color: #00c3a0; /* Teal text */
-border: 2px solid #00c3a0; /* Teal border */
+border: 2px solid rgb(17, 229, 222); /* Teal border */
 border-radius: 15px; /* Rounded corners */
 padding: 20px;
 text-align: center;
-width: 220px; /* Fixed width for bubbles */
+width: 240px; /* Fixed width for bubbles */
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 transition: transform 0.3s ease; /* Hover effect */
+font-size: 20px;
+color: rgb(17, 229, 222);
 }
 
 .feature-bubble p {
@@ -772,14 +743,14 @@ transition: transform 0.3s ease; /* Hover effect */
 
 .feature-bubble:hover {
 transform: scale(1.05); /* Slightly enlarge on hover */
-background-color: #00c3a0; /* Change to teal background */
+background-color: rgb(17, 229, 222); /* Change to teal background */
 color: #fff; /* White text on hover */
 }
 
 
 /* One Marketplace Section */
 .one-marketplace {
-padding: 50px 20px;
+padding: 50px 20px 50px 20px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -793,12 +764,11 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 flex-wrap: wrap; /* Adjust layout for responsiveness */
-gap: 40px;
-max-width: 1200px; /* Limit width of the section */
+gap: 90px;
 }
 
 .one-marketplace .collage img {
-max-width: 800px; /* Adjust collage size */
+max-width: 950px; /* Adjust collage size */
 width: 100%;
 height: auto;
 border-radius: 10px; /* Rounded corners */
@@ -868,7 +838,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
 
 /* Sign Up Button */
 .btn.sign-up {
-background-color: #00c3a0; /* Teal background */
+background-color: rgb(17, 229, 222); /* Teal background */
 color: #fff; /* White text */
 }
 
@@ -928,7 +898,7 @@ height: auto;
 .footer .logo-text {
 font-size: 20px; /* Adjust font size */
 font-weight: bold; /* Bold text */
-color: #00c3a0; /* Teal color to match the theme */
+color: rgb(17, 229, 222); /* Teal color to match the theme */
 }
 
 
